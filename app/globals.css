@@ -10,6 +10,19 @@
   --color-foreground: var(--foreground);
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
+
+  /* Project Colors */
+  --color-primary: #5a3e2a;
+  --color-accent: #FF914D;
+  --color-sky-blue: #7FB3C8;
+  --color-background-light: #f7f7f6;
+  --color-background-cream: #FFF5E1;
+  --color-background-dark: #1d1815;
+  --color-desert-brown: #2E1F14;
+
+  /* Project Fonts */
+  --font-display: var(--font-space-grotesk);
+  --font-body: var(--font-noto-sans);
 }
 
 @media (prefers-color-scheme: dark) {
