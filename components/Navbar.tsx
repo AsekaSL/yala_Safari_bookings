@@ -17,8 +17,9 @@ export default function Navbar() {
                             <div className="hidden md:flex flex-1 justify-end gap-8">
                                 <nav className="flex items-center gap-9">
                                     <Link className="text-[#161413] hover:text-primary text-sm font-medium leading-normal transition-colors" href="/packages">Safaris</Link>
+                                    <Link className="text-[#161413] hover:text-primary text-sm font-medium leading-normal transition-colors" href="/blog">Blog</Link>
+                                    <Link className="text-[#161413] hover:text-primary text-sm font-medium leading-normal transition-colors" href="/gallery">Gallery</Link>
                                     <Link className="text-[#161413] hover:text-primary text-sm font-medium leading-normal transition-colors" href="/about">About Us</Link>
-                                    <Link className="text-[#161413] hover:text-primary text-sm font-medium leading-normal transition-colors" href="/#experience">Experience</Link>
                                     <Link className="text-[#161413] hover:text-primary text-sm font-medium leading-normal transition-colors" href="/#planning">Plan Your Trip</Link>
                                     <Link className="text-[#161413] hover:text-primary text-sm font-medium leading-normal transition-colors" href="#contact">Contact</Link>
                                 </nav>
