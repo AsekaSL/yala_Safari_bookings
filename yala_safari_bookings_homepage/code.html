@@ -1,0 +1,495 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Yala Safari Bookings - Unveiling the Wild Heart of Sri Lanka</title>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&amp;family=Noto+Sans:wght@400;500;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#5a3e2a",
+                        "accent": "#FF914D",
+                        "sky-blue": "#7FB3C8",
+                        "background-light": "#f7f7f6", // Kept close to user request but using config value
+                        "background-cream": "#FFF5E1", // Adding the specific requested cream for sections
+                        "background-dark": "#1d1815",
+                        "desert-brown": "#2E1F14",
+                    },
+                    fontFamily: {
+                        "display": ["Space Grotesk", "sans-serif"],
+                        "body": ["Noto Sans", "sans-serif"],
+                    },
+                    borderRadius: {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px"},
+                },
+            },
+        }
+    </script>
+</head>
+<body>
+<div class="relative flex h-auto min-h-screen w-full flex-col bg-background-cream group/design-root overflow-x-hidden font-body text-[#161413]">
+<!-- Navigation -->
+<div class="sticky top-0 z-50 bg-white/95 backdrop-blur-sm border-b border-[#f3f2f1]">
+<div class="layout-container flex h-full grow flex-col">
+<div class="px-4 md:px-10 flex flex-1 justify-center py-0">
+<div class="layout-content-container flex flex-col max-w-[1280px] flex-1">
+<header class="flex items-center justify-between whitespace-nowrap py-3">
+<div class="flex items-center gap-4 text-primary">
+<div class="size-8 flex items-center justify-center text-primary">
+<span class="material-symbols-outlined !text-3xl">landscape</span>
+</div>
+<h2 class="text-primary text-xl font-bold font-display leading-tight tracking-[-0.015em]">Yala Safari Bookings</h2>
+</div>
+<div class="hidden md:flex flex-1 justify-end gap-8">
+<nav class="flex items-center gap-9">
+<a class="text-[#161413] hover:text-primary text-sm font-medium leading-normal transition-colors" href="#packages">Safaris</a>
+<a class="text-[#161413] hover:text-primary text-sm font-medium leading-normal transition-colors" href="#experience">Experience</a>
+<a class="text-[#161413] hover:text-primary text-sm font-medium leading-normal transition-colors" href="#planning">Plan Your Trip</a>
+<a class="text-[#161413] hover:text-primary text-sm font-medium leading-normal transition-colors" href="#contact">Contact</a>
+</nav>
+<button class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 px-6 bg-primary hover:bg-[#4a3222] text-white text-sm font-bold leading-normal tracking-[0.015em] transition-colors shadow-sm">
+<span class="truncate">Book a Safari</span>
+</button>
+</div>
+<div class="md:hidden text-[#161413]">
+<span class="material-symbols-outlined cursor-pointer">menu</span>
+</div>
+</header>
+</div>
+</div>
+</div>
+</div>
+<!-- Hero Section -->
+<div class="relative w-full">
+<div class="layout-container flex h-full grow flex-col">
+<div class="flex flex-1 justify-center">
+<div class="layout-content-container flex flex-col w-full flex-1">
+<div class="relative flex min-h-[600px] md:min-h-[80vh] flex-col gap-6 bg-cover bg-center bg-no-repeat items-start justify-end px-4 pb-12 md:px-20 md:pb-20" data-alt="Majestic Sri Lankan leopard resting on a rock in Yala National Park during golden hour" style='background-image: linear-gradient(rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0.6) 100%), url("https://lh3.googleusercontent.com/aida-public/AB6AXuAj_W8k9MLHpZTXZyCCTy0PmtbEcbDfN9TqbPDPoTQ1W3b8_hJdf9eGkDlp4MY3kv6XJDOnZRu66U5BP0yCzYQD72-aCgQyKDgzs87L4C0DFpcLD5UFB2fEVjllx6UDygrbGLH3Tg5rmIsdpsdfPVUW4YBRHyBBFT6lffeBzygSaY_o-Rf0hUe7kkXBFB1wsVJn4t9iFopH7MyTNJPM31XXC7jEhHPrnuaNCZiGZWKIGV8ABVRCx359GuI5RGxEs9yCaH-gRM2j-ijy");'>
+<div class="flex flex-col gap-4 text-left max-w-[800px] animate-fade-in-up">
+<span class="text-accent font-bold uppercase tracking-widest text-sm md:text-base">Welcome to the Jungle</span>
+<h1 class="text-white text-4xl font-black font-display leading-tight tracking-[-0.02em] md:text-6xl lg:text-7xl drop-shadow-sm">
+                                    Unveiling the Wild Heart of Sri Lanka
+                                </h1>
+<h2 class="text-gray-200 text-base font-normal leading-relaxed md:text-xl max-w-[600px] drop-shadow-sm">
+                                    Your Ultimate Safari &amp; Wildlife Guide to Yala National Park. Discover the highest leopard density in the world.
+                                </h2>
+</div>
+<div class="flex flex-wrap gap-4 mt-4">
+<button class="flex min-w-[140px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-12 px-8 bg-primary hover:bg-[#4a3222] text-white text-base font-bold leading-normal tracking-[0.015em] transition-all shadow-lg hover:translate-y-[-2px]">
+<span class="truncate">Book a Safari</span>
+</button>
+<button class="flex min-w-[140px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-12 px-8 bg-white/10 hover:bg-white/20 backdrop-blur-md border border-white/30 text-white text-base font-bold leading-normal tracking-[0.015em] transition-all hover:translate-y-[-2px]">
+<span class="truncate">Explore Wildlife</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Why Yala Section -->
+<div class="bg-white py-16 md:py-24">
+<div class="layout-container flex h-full grow flex-col">
+<div class="px-4 md:px-20 flex flex-1 justify-center">
+<div class="layout-content-container flex flex-col max-w-[1280px] flex-1">
+<div class="flex flex-col gap-10">
+<div class="flex flex-col gap-4 text-center md:text-left">
+<h2 class="text-primary tracking-tight text-3xl font-bold font-display leading-tight md:text-4xl">
+                                    Why Choose Yala?
+                                </h2>
+<p class="text-[#7e746d] text-lg font-normal leading-relaxed max-w-[720px]">
+                                    Discover the untamed beauty of Sri Lanka's most famous national park, where the jungle meets the Indian Ocean.
+                                </p>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+<!-- Feature 1 -->
+<div class="flex flex-col gap-4 rounded-xl border border-[#e3e0de] bg-background-light p-6 hover:shadow-md transition-shadow group">
+<div class="size-12 rounded-full bg-primary/10 flex items-center justify-center text-primary group-hover:bg-primary group-hover:text-white transition-colors">
+<span class="material-symbols-outlined">pets</span>
+</div>
+<div class="flex flex-col gap-2">
+<h3 class="text-[#161413] text-xl font-bold font-display leading-tight">Leopard Density</h3>
+<p class="text-[#7e746d] text-sm leading-relaxed">Recognized as having one of the highest leopard densities in the world.</p>
+</div>
+</div>
+<!-- Feature 2 -->
+<div class="flex flex-col gap-4 rounded-xl border border-[#e3e0de] bg-background-light p-6 hover:shadow-md transition-shadow group">
+<div class="size-12 rounded-full bg-sky-blue/20 flex items-center justify-center text-[#2d5c6f] group-hover:bg-sky-blue group-hover:text-white transition-colors">
+<span class="material-symbols-outlined">pest_control_rodent</span> <!-- Placeholder for Elephant -->
+</div>
+<div class="flex flex-col gap-2">
+<h3 class="text-[#161413] text-xl font-bold font-display leading-tight">Gentle Giants</h3>
+<p class="text-[#7e746d] text-sm leading-relaxed">Home to majestic herds of elephants roaming freely in their natural habitat.</p>
+</div>
+</div>
+<!-- Feature 3 -->
+<div class="flex flex-col gap-4 rounded-xl border border-[#e3e0de] bg-background-light p-6 hover:shadow-md transition-shadow group">
+<div class="size-12 rounded-full bg-accent/10 flex items-center justify-center text-accent group-hover:bg-accent group-hover:text-white transition-colors">
+<span class="material-symbols-outlined">photo_camera</span>
+</div>
+<div class="flex flex-col gap-2">
+<h3 class="text-[#161413] text-xl font-bold font-display leading-tight">Rich Biodiversity</h3>
+<p class="text-[#7e746d] text-sm leading-relaxed">A birdwatcher's paradise with 215 bird species and diverse reptiles.</p>
+</div>
+</div>
+<!-- Feature 4 -->
+<div class="flex flex-col gap-4 rounded-xl border border-[#e3e0de] bg-background-light p-6 hover:shadow-md transition-shadow group">
+<div class="size-12 rounded-full bg-blue-100 flex items-center justify-center text-blue-600 group-hover:bg-blue-500 group-hover:text-white transition-colors">
+<span class="material-symbols-outlined">water_drop</span>
+</div>
+<div class="flex flex-col gap-2">
+<h3 class="text-[#161413] text-xl font-bold font-display leading-tight">Coastal Landscapes</h3>
+<p class="text-[#7e746d] text-sm leading-relaxed">A unique ecosystem where dry monsoon forests meet pristine beaches.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Safari Packages -->
+<div class="bg-background-cream py-16 md:py-24" id="packages">
+<div class="layout-container flex h-full grow flex-col">
+<div class="px-4 md:px-20 flex flex-1 justify-center">
+<div class="layout-content-container flex flex-col max-w-[1280px] flex-1">
+<div class="flex flex-col gap-10">
+<div class="flex flex-col items-center text-center gap-4">
+<span class="text-accent font-bold uppercase tracking-widest text-sm">Adventures Await</span>
+<h2 class="text-primary text-3xl font-bold font-display leading-tight md:text-4xl">Safari Packages</h2>
+<p class="text-[#7e746d] text-lg font-normal leading-relaxed max-w-[700px]">
+                                    Choose the perfect safari experience. Whether you prefer a private luxury jeep or a shared adventure, we have options for every traveler.
+                                </p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+<!-- Card 1: Private All-Inclusive -->
+<div class="flex flex-col rounded-xl overflow-hidden bg-white shadow-sm hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1">
+<div class="h-48 bg-cover bg-center" data-alt="Luxury private safari jeep in Yala" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDX0XdnalZ-eocWpBmw-70DR2eZIzhFP6gD2C_dYzplUqqJ0PZVPF7gbLTtmpkro0Y3PXXsn_6Cndonpo_UzyO8Kcs_uI7-dYx0MdySTiWcHrPC9w594x6Kv0PyTaB2yOwte462DSTGQltO2wpYcw_hYzqD4X-KFLFIyJoeUI_HhqGqLgAmR9JhiiNbJ0GLa03yazqMzx7cep5_Y-I165cVyJ5DKKsB3CmNuL2Do2sPlAz9EOFWxqHQpLhYsI8PFuNBfkC2maiNFX1y");'>
+<div class="flex justify-end p-3">
+<span class="bg-primary text-white text-xs font-bold px-2 py-1 rounded">Best Value</span>
+</div>
+</div>
+<div class="flex flex-col p-6 gap-4 flex-1">
+<div>
+<h3 class="text-primary text-lg font-bold font-display">Private All-Inclusive</h3>
+<p class="text-[#7e746d] text-sm mt-1">For those who want it all handled.</p>
+</div>
+<div class="flex items-baseline gap-1">
+<span class="text-[#161413] text-3xl font-bold tracking-tight">$150</span>
+<span class="text-[#7e746d] text-sm font-medium">/ person</span>
+</div>
+<div class="flex flex-col gap-2 border-t border-gray-100 pt-4 flex-1">
+<div class="flex gap-2 text-sm text-[#5a5a5a]"><span class="material-symbols-outlined text-primary text-[20px]">check</span> 4 Hours Duration</div>
+<div class="flex gap-2 text-sm text-[#5a5a5a]"><span class="material-symbols-outlined text-primary text-[20px]">check</span> Expert Naturalist Guide</div>
+<div class="flex gap-2 text-sm text-[#5a5a5a]"><span class="material-symbols-outlined text-primary text-[20px]">check</span> Snacks &amp; Drinks</div>
+<div class="flex gap-2 text-sm text-[#5a5a5a]"><span class="material-symbols-outlined text-primary text-[20px]">check</span> Hotel Pickup</div>
+</div>
+<button class="w-full mt-2 rounded-lg h-10 px-4 bg-primary text-white text-sm font-bold hover:bg-[#4a3222] transition-colors">Book Now</button>
+</div>
+</div>
+<!-- Card 2: Shared All-Inclusive -->
+<div class="flex flex-col rounded-xl overflow-hidden bg-white shadow-sm hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1">
+<div class="h-48 bg-cover bg-center" data-alt="Group of tourists in a safari jeep looking at wildlife" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBQE7lPcuAqhsHCE3DSGAB-7pZ1yJr0qhd1_C4o11reDqDhPPXmBvaMVLb70CchHW7hAnjY54zoDSVp4opdt2HIqaBHVg9M-_ZQFqBW52D4JlvNI0wWovy3mYq5HwmCn6FcWVGoIlDVrF33Exc3jNdxgVKUvKTGr0hWMINTmCAfiQSx-RnT9aq0Yop6PEvAlNZdaHKkmFnw1rPs0VwnRBdNqgXudD2zUuVPi37vfDQVMcAgsWBt8jCYy1KCcqGeiTZ2lMTf5w_C8SBt");'></div>
+<div class="flex flex-col p-6 gap-4 flex-1">
+<div>
+<h3 class="text-primary text-lg font-bold font-display">Shared All-Inclusive</h3>
+<p class="text-[#7e746d] text-sm mt-1">Meet new friends, share the cost.</p>
+</div>
+<div class="flex items-baseline gap-1">
+<span class="text-[#161413] text-3xl font-bold tracking-tight">$80</span>
+<span class="text-[#7e746d] text-sm font-medium">/ person</span>
+</div>
+<div class="flex flex-col gap-2 border-t border-gray-100 pt-4 flex-1">
+<div class="flex gap-2 text-sm text-[#5a5a5a]"><span class="material-symbols-outlined text-primary text-[20px]">check</span> 4 Hours Duration</div>
+<div class="flex gap-2 text-sm text-[#5a5a5a]"><span class="material-symbols-outlined text-primary text-[20px]">check</span> Standard Guide</div>
+<div class="flex gap-2 text-sm text-[#5a5a5a]"><span class="material-symbols-outlined text-primary text-[20px]">check</span> Water Included</div>
+<div class="flex gap-2 text-sm text-[#5a5a5a]"><span class="material-symbols-outlined text-primary text-[20px]">check</span> Meeting Point Pickup</div>
+</div>
+<button class="w-full mt-2 rounded-lg h-10 px-4 bg-[#f3f2f1] text-[#161413] text-sm font-bold hover:bg-[#e0dedc] transition-colors">View Details</button>
+</div>
+</div>
+<!-- Card 3: Private Jeep-Only -->
+<div class="flex flex-col rounded-xl overflow-hidden bg-white shadow-sm hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1">
+<div class="h-48 bg-cover bg-center" data-alt="Close up of a rugged safari jeep tire on dirt road" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuC-lHG_f3Gan9XR1DGYtr0ho0d_fs-LG2Ro_MJ4AyHk9IMHt8WqmhBzqwNrgCtjhFaUIssfVDGEc4HMOqHSwKCUPchNGSpFfs8tYVDUBOhrJ_fzB0JTGO8qmcOxgdi-6j1nvLmV31ljjqnRToenvZK7QaUMvFZ63bua1IinTtFc7aZbXSx-QP7-anknim-Yh4Bd2AAt__NZ7vW7lHDfHlFEdcFX1OMd31ArESy24O7ySHpK8wGrzAhYXMFjG09jy53uMCThOY6nDEC6");'></div>
+<div class="flex flex-col p-6 gap-4 flex-1">
+<div>
+<h3 class="text-primary text-lg font-bold font-display">Private Jeep-Only</h3>
+<p class="text-[#7e746d] text-sm mt-1">Flexible timing for photographers.</p>
+</div>
+<div class="flex items-baseline gap-1">
+<span class="text-[#161413] text-3xl font-bold tracking-tight">$100</span>
+<span class="text-[#7e746d] text-sm font-medium">/ jeep</span>
+</div>
+<div class="flex flex-col gap-2 border-t border-gray-100 pt-4 flex-1">
+<div class="flex gap-2 text-sm text-[#5a5a5a]"><span class="material-symbols-outlined text-primary text-[20px]">check</span> Flexible Timing</div>
+<div class="flex gap-2 text-sm text-[#5a5a5a]"><span class="material-symbols-outlined text-primary text-[20px]">check</span> Vehicle &amp; Driver Only</div>
+<div class="flex gap-2 text-sm text-[#5a5a5a]"><span class="material-symbols-outlined text-primary text-[20px]">check</span> Private Experience</div>
+<div class="flex gap-2 text-sm text-[#5a5a5a]"><span class="material-symbols-outlined text-primary text-[20px]">check</span> Up to 6 Pax</div>
+</div>
+<button class="w-full mt-2 rounded-lg h-10 px-4 bg-[#f3f2f1] text-[#161413] text-sm font-bold hover:bg-[#e0dedc] transition-colors">View Details</button>
+</div>
+</div>
+<!-- Card 4: Shared Jeep-Only -->
+<div class="flex flex-col rounded-xl overflow-hidden bg-white shadow-sm hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1">
+<div class="h-48 bg-cover bg-center" data-alt="Sunrise view over Yala national park landscape" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuCKxeLK39nuyogrN0gZ-lqLg3OWTzYx3qWNWThEzJAlFfO-Cd3aFXiMlkDxCg9c6YDsoW1gP6t37lp7Ivd-FNnud32FCkSlQ26xMV46FxIGA0u7qGP8LxAR-M5se5KI8JYeqsCrICDoOQsyUEG5-mB2jNX5WVIvtTsi6MzhG-HR4JBHxOFJzQepm4TE2wmERiEGsZyRfAHms2bLL7ueNDdY27OBFReLKDkSZcPTzjb8Fop2eVENM-A4OtxuVXlzoN9A4FPHCIXK-M_d");'>
+<div class="flex justify-end p-3">
+<span class="bg-accent text-white text-xs font-bold px-2 py-1 rounded">Budget</span>
+</div>
+</div>
+<div class="flex flex-col p-6 gap-4 flex-1">
+<div>
+<h3 class="text-primary text-lg font-bold font-display">Shared Jeep-Only</h3>
+<p class="text-[#7e746d] text-sm mt-1">The most economical way to see Yala.</p>
+</div>
+<div class="flex items-baseline gap-1">
+<span class="text-[#161413] text-3xl font-bold tracking-tight">$50</span>
+<span class="text-[#7e746d] text-sm font-medium">/ jeep</span>
+</div>
+<div class="flex flex-col gap-2 border-t border-gray-100 pt-4 flex-1">
+<div class="flex gap-2 text-sm text-[#5a5a5a]"><span class="material-symbols-outlined text-primary text-[20px]">check</span> Fixed Timing</div>
+<div class="flex gap-2 text-sm text-[#5a5a5a]"><span class="material-symbols-outlined text-primary text-[20px]">check</span> Vehicle Only</div>
+<div class="flex gap-2 text-sm text-[#5a5a5a]"><span class="material-symbols-outlined text-primary text-[20px]">check</span> Shared Guide</div>
+<div class="flex gap-2 text-sm text-[#5a5a5a]"><span class="material-symbols-outlined text-primary text-[20px]">check</span> Park Fees Extra</div>
+</div>
+<button class="w-full mt-2 rounded-lg h-10 px-4 bg-[#f3f2f1] text-[#161413] text-sm font-bold hover:bg-[#e0dedc] transition-colors">View Details</button>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Safari Experience Timeline -->
+<div class="bg-white py-16 md:py-24 overflow-hidden" id="experience">
+<div class="layout-container flex h-full grow flex-col">
+<div class="px-4 md:px-20 flex flex-1 justify-center">
+<div class="layout-content-container flex flex-col max-w-[960px] flex-1">
+<div class="flex flex-col items-center mb-12">
+<h2 class="text-primary text-3xl font-bold font-display text-center mb-4">A Day in the Wild</h2>
+<p class="text-[#7e746d] text-center max-w-2xl">Timing is everything in the wild. Our experts have curated the perfect schedules to maximize your sightings.</p>
+</div>
+<div class="grid grid-cols-[auto_1fr] gap-x-6 md:gap-x-10 px-4">
+<!-- Morning -->
+<div class="flex flex-col items-center gap-1 pt-3">
+<div class="bg-center bg-no-repeat bg-cover rounded-full size-12 border-4 border-background-cream shadow-lg z-10" data-alt="Sunrise icon or image representing morning" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBp5Pnks2ALayH82SkYI7XaLFAQaZkGYCefpmSZEN6KrFpbiREg0Er-rL2TRkqfWK-UYKOZbVe6hqOZRoJzkc5v4m9OcL1MkhAkVlbxLWMJfSrMtT0GsW37C1xwJ0TMQJLwM_2OxBWCeDjsTBQ75dqAbXodFsag61YsyNgdFOq1SYBmpgA75uEiYWcWIWITrHxatjll3iwCwDqClat0_p9ztKDRD7ckHti3ZpPckpdJe1Ou3ZdUjBXB2YjplYR7kXCf0aH1EJPR-_Bj");'></div>
+<div class="w-[2px] bg-[#e3e0de] h-full grow"></div>
+</div>
+<div class="flex flex-1 flex-col py-3 pb-12">
+<h3 class="text-primary text-xl font-bold font-display">Morning Safari</h3>
+<p class="text-accent text-sm font-bold mb-2">6:00 AM - 10:00 AM</p>
+<p class="text-[#5a5a5a] leading-relaxed">The jungle wakes up. This is the best time to see leopards on the prowl and birds becoming active. The lighting is soft and golden, perfect for photography.</p>
+</div>
+<!-- Afternoon -->
+<div class="flex flex-col items-center gap-1">
+<div class="w-[2px] bg-[#e3e0de] h-8"></div>
+<div class="bg-center bg-no-repeat bg-cover rounded-full size-12 border-4 border-background-cream shadow-lg z-10" data-alt="Bright sun image representing afternoon" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuA6BOLDSqQ4miscR7ga7_XG_ezysuVtiyCyCa38JEcl-1klRfP7ycCkK-yTbdvS51Ymd50sPSiTIfo-460NRu_B25nO01Lgpm93hqhHf6ZBi_QcQr0CKCE96FoNUOkGBqfe3KYQmpmIBjMf8JseEOJLStRXfXPSzCH2uD_hkpJH-4sTjnniow52CxBFNWKAHpPCfZ39lOYkZ7nDaMHFtwtvp_lOwnpGFbwX9Ct5Sofa1EQxv06sM7tewFovNrnCOQvt0YNOUrFylHcI");'></div>
+<div class="w-[2px] bg-[#e3e0de] h-full grow"></div>
+</div>
+<div class="flex flex-1 flex-col py-3 pb-12">
+<h3 class="text-primary text-xl font-bold font-display">Afternoon Safari</h3>
+<p class="text-accent text-sm font-bold mb-2">2:30 PM - 6:30 PM</p>
+<p class="text-[#5a5a5a] leading-relaxed">As the heat of the day subsides, animals come out to waterholes to drink. Elephants are frequently spotted bathing, and sunset provides a dramatic backdrop.</p>
+</div>
+<!-- Full Day -->
+<div class="flex flex-col items-center gap-1 pb-3">
+<div class="w-[2px] bg-[#e3e0de] h-8"></div>
+<div class="bg-center bg-no-repeat bg-cover rounded-full size-12 border-4 border-background-cream shadow-lg z-10" data-alt="Starry night icon or dusk image" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBb30XZ9WdkHWjtDWm_tU84bP7cFDydbC9vgf3VVtfSiRIEToX7zkk2KBnUKpdHK7lFUl3WACn7bqfSL_I5sX1vpK7q98T2uQLq854B-ZT5jCa1_pMSWS1ro5DpRwIuZ_gdA8-gGPFSZx_6HzHbm7vJbbXGNnf9mK3T4wXWtFxAAeBHpShiEq5du56QqB5Lw5o5kfOIleIlpxuhyx7nlsKn96KOAtIroQRCWy5bCqALjNNgcGTCdAOKbX_4yZK7aNlbRx8GNGXUdNMs");'></div>
+</div>
+<div class="flex flex-1 flex-col py-3">
+<h3 class="text-primary text-xl font-bold font-display">Full Day Expedition</h3>
+<p class="text-accent text-sm font-bold mb-2">6:00 AM - 6:00 PM</p>
+<p class="text-[#5a5a5a] leading-relaxed">For the true enthusiast. Spend the entire day deep in the park, including a rustic jungle lunch. Venture into less crowded blocks for exclusive sightings.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Planning Your Trip (Tabs) -->
+<div class="bg-background-cream py-16 md:py-24" id="planning">
+<div class="layout-container flex h-full grow flex-col">
+<div class="px-4 md:px-20 flex flex-1 justify-center">
+<div class="layout-content-container flex flex-col max-w-[1280px] flex-1">
+<div class="flex flex-col gap-8">
+<div class="flex flex-col gap-2">
+<h2 class="text-primary text-3xl font-bold font-display leading-tight">Plan Your Trip</h2>
+<p class="text-[#7e746d]">Everything you need to know before you go.</p>
+</div>
+<div class="flex flex-col md:flex-row gap-8">
+<!-- Sidebar / Tab Headers -->
+<div class="flex flex-col gap-2 md:w-1/4">
+<button class="text-left px-4 py-3 rounded-lg bg-primary text-white font-bold text-sm shadow-md transition-all">Best Time to Visit</button>
+<button class="text-left px-4 py-3 rounded-lg bg-white hover:bg-[#e3e0de] text-[#161413] font-medium text-sm transition-all">Park Fees &amp; Tickets</button>
+<button class="text-left px-4 py-3 rounded-lg bg-white hover:bg-[#e3e0de] text-[#161413] font-medium text-sm transition-all">Where to Stay</button>
+<button class="text-left px-4 py-3 rounded-lg bg-white hover:bg-[#e3e0de] text-[#161413] font-medium text-sm transition-all">Getting There</button>
+</div>
+<!-- Content Area -->
+<div class="bg-white p-6 md:p-8 rounded-xl border border-[#e3e0de] flex-1 shadow-sm">
+<h3 class="text-xl font-bold text-primary mb-4 font-display">Seasonality Guide</h3>
+<div class="space-y-4 text-[#5a5a5a]">
+<p>Yala National Park is open year-round, but the experience varies by season.</p>
+<ul class="list-disc pl-5 space-y-2">
+<li><strong class="text-[#161413]">Feb - July:</strong> Water levels drop, bringing animals to the waterholes. This is the peak season for leopard sightings.</li>
+<li><strong class="text-[#161413]">Sep - Oct:</strong> The park (Block 1) usually closes for maintenance. We offer safaris in Block 5 and Lunugamwehera during this time.</li>
+<li><strong class="text-[#161413]">Nov - Jan:</strong> The park is lush and green after monsoon rains. Great for bird watching and photography of vibrant landscapes.</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Explore Yala Blocks (Map Concept) -->
+<div class="bg-white py-16">
+<div class="layout-container flex h-full grow flex-col">
+<div class="px-4 md:px-20 flex flex-1 justify-center">
+<div class="layout-content-container flex flex-col max-w-[1280px] flex-1">
+<div class="mb-10 text-center">
+<h2 class="text-primary text-3xl font-bold font-display">Explore the Zones</h2>
+<p class="text-[#7e746d] mt-2">Yala is divided into blocks. Choose your adventure.</p>
+</div>
+<div class="relative w-full aspect-[16/9] md:aspect-[21/9] bg-[#e6dfd8] rounded-xl overflow-hidden flex items-center justify-center bg-cover bg-center" data-location="Yala National Park Map" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuA5aKx8Fv7uco7OLQhlKXcdSPMt5ghq7_MBLPRdQxDEnUwjVpsh69HgQj5c3xuak00Or5D4LpROn0HdnnSQ-0PJKiO6z58D9Mnwt1Sb4yiH1xImvr_h_wbIGtsNZIdpLtvlAHfg8Lphvcm-naobc4YksK-R0dDC5hE1mpRN_Amdokkpa0v8fJupxeQAJWBhogiuRfj-JGnpjdTr7RsR2G0aipA1liA-MbgEpTbLkLXjHrTirRxNPsyLsdHJWqRGp43E987GnnvjKKt4");'>
+<div class="absolute inset-0 bg-black/20"></div>
+<!-- Stylized Map Markers -->
+<div class="grid grid-cols-1 md:grid-cols-3 gap-4 w-full px-4 md:px-20 z-10">
+<!-- Block 1 -->
+<div class="bg-white/90 backdrop-blur-sm p-4 rounded-lg shadow-lg border-l-4 border-primary">
+<h4 class="font-bold text-primary">Block 1 (Main)</h4>
+<p class="text-xs text-[#5a5a5a] mt-1">Highest density of leopards. Most popular and busy.</p>
+</div>
+<!-- Block 5 -->
+<div class="bg-white/90 backdrop-blur-sm p-4 rounded-lg shadow-lg border-l-4 border-sky-blue">
+<div class="flex justify-between items-start">
+<h4 class="font-bold text-primary">Block 5</h4>
+<span class="bg-sky-blue text-white text-[10px] px-2 py-0.5 rounded-full">Quiet</span>
+</div>
+<p class="text-xs text-[#5a5a5a] mt-1">Scenic reservoirs and less crowded. Good for elephants.</p>
+</div>
+<!-- Lunugamwehera -->
+<div class="bg-white/90 backdrop-blur-sm p-4 rounded-lg shadow-lg border-l-4 border-green-600">
+<div class="flex justify-between items-start">
+<h4 class="font-bold text-primary">Lunugamwehera</h4>
+<span class="bg-green-600 text-white text-[10px] px-2 py-0.5 rounded-full">Ethical</span>
+</div>
+<p class="text-xs text-[#5a5a5a] mt-1">Elephant corridor. Zero crowding, pure wilderness.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Responsible Tourism Section -->
+<div class="bg-desert-brown py-16 md:py-24 text-white">
+<div class="layout-container flex h-full grow flex-col">
+<div class="px-4 md:px-20 flex flex-1 justify-center">
+<div class="layout-content-container flex flex-col max-w-[1280px] flex-1">
+<div class="flex flex-col md:flex-row items-center gap-12">
+<div class="flex-1 space-y-6">
+<h2 class="text-3xl md:text-4xl font-bold font-display text-background-cream">Responsible Tourism</h2>
+<p class="text-gray-300 leading-relaxed text-lg">
+                                    We believe in protecting the wild heart of Sri Lanka. Our safaris are conducted with the utmost respect for wildlife and local communities. We strictly adhere to park rules to minimize stress on animals.
+                                </p>
+<div class="flex flex-col gap-4 mt-4">
+<div class="flex items-center gap-4">
+<div class="p-2 bg-white/10 rounded-full"><span class="material-symbols-outlined text-accent">recycling</span></div>
+<span class="font-medium">Plastic-free Safaris</span>
+</div>
+<div class="flex items-center gap-4">
+<div class="p-2 bg-white/10 rounded-full"><span class="material-symbols-outlined text-accent">speed</span></div>
+<span class="font-medium">Strict Speed Limits</span>
+</div>
+<div class="flex items-center gap-4">
+<div class="p-2 bg-white/10 rounded-full"><span class="material-symbols-outlined text-accent">group</span></div>
+<span class="font-medium">Supporting Local Guides</span>
+</div>
+</div>
+</div>
+<div class="flex-1 w-full">
+<div class="grid grid-cols-2 gap-4">
+<div class="h-48 rounded-lg bg-cover bg-center" data-alt="Close up of elephant eye showing emotion" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuC02iI-Phj57mRdcqhi7ftq6HJG72LIz1Vy64_MyMIaUAnCOJOmfeyFiDoEGm15xD8NbHrR215QEhXPsS5-Y41t2Get_FXtFMkqbc6YvmM3zOiNmMglpb-z7sHQkgrDas4fg6vmu0FmnSQ4vfXEwlBuzgGMg5-DetRsSWWSDpZBDgNMVE8uR1qF2Q4NhI9kaytkODsYUevmcFG3mfmy9yXlmzvkYV_nyqmXBdzxtKoVPKipUGwM-gTWg4DVGrGOyzrZKLnql5UJfRcC");'></div>
+<div class="h-48 rounded-lg bg-cover bg-center mt-8" data-alt="Safari jeep maintaining distance from wildlife" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDvBjBHCEf4BuO9RMROViYppoS4RDAFgVqVBawvSvdd0CN7SE271cz3d2STYq5HIlPCBr2Na8OKNTIKsoteTj46OLepkWGI0yHDC08opQulRQawDvq1gM4Bi_jgLwxJJnxxGWsLD3IAYhQvwBkAbtAIpN11Rgu1gJWEtRgJUPZv2DlBTXJD1Y35iow3XQZGXxvU1FPTum6qfORYlf4TUMtYOB9rcnNFw_lw8JGG_UydNy2mzWey1L4_4kGlEhhBX2jGTPx-01TIWJo6");'></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Footer -->
+<footer class="bg-[#1d1815] text-[#9ca3af] py-16 border-t border-gray-800" id="contact">
+<div class="layout-container flex h-full grow flex-col">
+<div class="px-4 md:px-20 flex flex-1 justify-center">
+<div class="layout-content-container flex flex-col max-w-[1280px] flex-1">
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-12">
+<!-- Brand -->
+<div class="flex flex-col gap-4">
+<div class="flex items-center gap-2 text-white">
+<span class="material-symbols-outlined">landscape</span>
+<span class="text-xl font-bold font-display">Yala Safari Bookings</span>
+</div>
+<p class="text-sm leading-relaxed">
+                                    Unforgettable wildlife experiences in the heart of Sri Lanka. Book your adventure with the experts today.
+                                </p>
+<div class="flex gap-4 mt-2">
+<a class="hover:text-white transition-colors" href="#"><span class="material-symbols-outlined">social_leaderboard</span></a> <!-- Using icon as proxy for social logo -->
+<a class="hover:text-white transition-colors" href="#"><span class="material-symbols-outlined">photo_camera</span></a>
+</div>
+</div>
+<!-- Quick Links -->
+<div class="flex flex-col gap-4">
+<h4 class="text-white font-bold text-base">Quick Links</h4>
+<nav class="flex flex-col gap-2 text-sm">
+<a class="hover:text-primary transition-colors" href="#">Safaris</a>
+<a class="hover:text-primary transition-colors" href="#">About Us</a>
+<a class="hover:text-primary transition-colors" href="#">Blog</a>
+<a class="hover:text-primary transition-colors" href="#">Contact</a>
+<a class="hover:text-primary transition-colors" href="#">Privacy Policy</a>
+</nav>
+</div>
+<!-- Contact -->
+<div class="flex flex-col gap-4">
+<h4 class="text-white font-bold text-base">Contact Us</h4>
+<div class="flex flex-col gap-3 text-sm">
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-primary text-sm">call</span>
+<span>+94 77 123 4567</span>
+</div>
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-primary text-sm">mail</span>
+<span>hello@yalasafari.com</span>
+</div>
+<div class="flex items-start gap-3">
+<span class="material-symbols-outlined text-primary text-sm mt-0.5">location_on</span>
+<span>Palatupana Entrance,<br/>Yala National Park, Sri Lanka</span>
+</div>
+</div>
+</div>
+<!-- Newsletter -->
+<div class="flex flex-col gap-4">
+<h4 class="text-white font-bold text-base">Newsletter</h4>
+<p class="text-sm">Subscribe for wildlife updates and seasonal offers.</p>
+<div class="flex flex-col gap-2">
+<input class="w-full bg-[#2a2420] border border-gray-700 rounded-lg px-4 py-2 text-sm text-white focus:outline-none focus:border-primary" placeholder="Your email address" type="email"/>
+<button class="w-full bg-primary hover:bg-[#4a3222] text-white text-sm font-bold py-2 rounded-lg transition-colors">Subscribe</button>
+</div>
+</div>
+</div>
+<div class="border-t border-gray-800 pt-8 text-center text-xs">
+<p>© 2023 Yala Safari Bookings. All rights reserved.</p>
+</div>
+</div>
+</div>
+</div>
+</footer>
+</div>
+</body></html>
