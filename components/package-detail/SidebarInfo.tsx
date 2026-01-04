@@ -1,6 +1,7 @@
 import React from 'react';
+import { PackageDetail } from '@/types';
 
-export default function SidebarInfo() {
+export default function SidebarInfo({ pkg }: { pkg: PackageDetail }) {
     return (
         <div className="sticky top-24 flex flex-col gap-6">
             <div className="bg-background-cream p-6 rounded-xl border border-[#e3e0de]">
@@ -39,18 +40,21 @@ export default function SidebarInfo() {
                 <h3 className="text-lg font-bold font-display text-primary mb-4">Pricing & Policies</h3>
                 <div className="space-y-4">
                     <div className="border-b border-gray-100 pb-2">
-                        <div className="flex justify-between text-sm mb-1">
-                            <span className="text-[#5a5a5a]">1 Person</span>
-                            <span className="font-bold text-[#161413]">$150</span>
-                        </div>
-                        <div className="flex justify-between text-sm mb-1">
-                            <span className="text-[#5a5a5a]">2 People</span>
-                            <span className="font-bold text-[#161413]">$110 pp</span>
-                        </div>
-                        <div className="flex justify-between text-sm">
-                            <span className="text-[#5a5a5a]">3-6 People</span>
-                            <span className="font-bold text-[#161413]">$90 pp</span>
-                        </div>
+                        {
+                            pkg.pricingPerPerson ? pkg.pricingPerPerson.map((item, index) => (
+                                <div key={index} className="flex justify-between text-sm mb-1">
+                                    <span className="text-[#5a5a5a]">{item.label}</span>
+                                    <span className="font-bold text-[#161413]">$ {item.price}</span>
+                                </div>
+                            ))
+                            :
+                            pkg.price.jeep && (
+                                <div  className="flex justify-between text-sm mb-1">
+                                    <span className="text-[#5a5a5a]">Jeep</span>
+                                    <span className="font-bold text-[#161413]">{pkg.price.jeep}</span>
+                                </div>
+                            )
+                        }
                     </div>
                     <div className="flex flex-col gap-1">
                         <h4 className="text-xs font-bold uppercase text-[#7e746d]">Cancellation</h4>
