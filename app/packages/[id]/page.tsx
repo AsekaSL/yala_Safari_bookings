@@ -1,5 +1,3 @@
-import Navbar from "../../../components/Navbar";
-import Footer from "../../../components/Footer";
 import DetailHero from "../../../components/package-detail/DetailHero";
 import PackageInfo from "../../../components/package-detail/PackageInfo";
 import SafariTimeline from "../../../components/package-detail/SafariTimeline";
@@ -12,7 +10,6 @@ import BottomBookingBar from "../../../components/package-detail/BottomBookingBa
 export default function PackageDetailPage() {
     return (
         <div className="relative flex h-auto min-h-screen w-full flex-col bg-background-light group/design-root overflow-x-hidden font-body text-[#161413]">
-            <Navbar />
             <DetailHero />
             <div className="layout-container flex flex-col items-center">
                 <div className="layout-content-container w-full max-w-[1280px] px-4 md:px-10 py-12 md:py-20">
@@ -29,7 +26,6 @@ export default function PackageDetailPage() {
                 </div>
             </div>
             <BottomBookingBar />
-            <Footer />
         </div>
     );
 }

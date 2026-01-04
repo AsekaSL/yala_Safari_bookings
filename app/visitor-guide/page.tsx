@@ -1,5 +1,3 @@
-import Navbar from "../../components/Navbar";
-import Footer from "../../components/Footer";
 import GuideHero from "../../components/visitor-guide/GuideHero";
 import PreArrivalChecklist from "../../components/visitor-guide/PreArrivalChecklist";
 import GettingThere from "../../components/visitor-guide/GettingThere";
@@ -14,7 +12,6 @@ import GuideCTA from "../../components/visitor-guide/GuideCTA";
 export default function VisitorGuidePage() {
     return (
         <div className="relative flex h-auto min-h-screen w-full flex-col bg-background-light group/design-root overflow-x-hidden font-body text-[#2E1F14]">
-            <Navbar />
             <GuideHero />
             <PreArrivalChecklist />
             <GettingThere />
@@ -25,7 +22,6 @@ export default function VisitorGuidePage() {
             <SafetyInfo />
             <ContactInfo />
             <GuideCTA />
-            <Footer />
         </div>
     );
 }

@@ -1,5 +1,3 @@
-import Navbar from "../../components/Navbar";
-import Footer from "../../components/Footer";
 import BlogHero from "../../components/blog/BlogHero";
 import BlogFeatured from "../../components/blog/BlogFeatured";
 import BlogCategories from "../../components/blog/BlogCategories";
@@ -12,7 +10,7 @@ import BlogCTA from "../../components/blog/BlogCTA";
 export default function BlogPage() {
     return (
         <div className="relative flex min-h-screen w-full flex-col bg-background-cream font-body text-desert-brown antialiased group/design-root overflow-x-hidden">
-            <Navbar />
+
             <BlogHero />
             <BlogFeatured />
             <BlogCategories />
@@ -21,7 +19,6 @@ export default function BlogPage() {
             <ConservationSection />
             <Newsletter />
             <BlogCTA />
-            <Footer />
         </div>
     );
 }

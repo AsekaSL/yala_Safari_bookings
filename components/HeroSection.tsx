@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import React from 'react';
 
 export default function HeroSection() {
@@ -22,12 +23,16 @@ export default function HeroSection() {
                                 </h2>
                             </div>
                             <div className="flex flex-wrap gap-4 mt-4">
-                                <button className="flex min-w-[140px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-12 px-8 bg-primary hover:bg-[#4a3222] text-white text-base font-bold leading-normal tracking-[0.015em] transition-all shadow-lg hover:translate-y-[-2px]">
-                                    <span className="truncate">Book a Safari</span>
-                                </button>
-                                <button className="flex min-w-[140px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-12 px-8 bg-white/10 hover:bg-white/20 backdrop-blur-md border border-white/30 text-white text-base font-bold leading-normal tracking-[0.015em] transition-all hover:translate-y-[-2px]">
-                                    <span className="truncate">Explore Wildlife</span>
-                                </button>
+                                <Link href='/packages'>
+                                    <button className="flex min-w-[140px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-12 px-8 bg-primary hover:bg-[#4a3222] text-white text-base font-bold leading-normal tracking-[0.015em] transition-all shadow-lg hover:translate-y-[-2px]">
+                                        <span className="truncate">Book a Safari</span>
+                                    </button>
+                                </Link>
+                                <Link href='/visitor-guide'> 
+                                    <button className="flex min-w-[140px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-12 px-8 bg-white/10 hover:bg-white/20 backdrop-blur-md border border-white/30 text-white text-base font-bold leading-normal tracking-[0.015em] transition-all hover:translate-y-[-2px]">
+                                        <span className="truncate">Explore Wildlife</span>
+                                    </button>
+                                </Link>
                             </div>
                         </div>
                     </div>
