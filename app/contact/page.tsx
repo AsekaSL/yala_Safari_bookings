@@ -1,5 +1,3 @@
-import Navbar from "../../components/Navbar";
-import Footer from "../../components/Footer";
 import ContactHero from "../../components/contact/ContactHero";
 import ContactForm from "../../components/contact/ContactForm";
 import DirectContact from "../../components/contact/DirectContact";
@@ -10,7 +8,6 @@ import ContactCTA from "../../components/contact/ContactCTA";
 export default function ContactPage() {
     return (
         <div className="relative flex h-auto min-h-screen w-full flex-col bg-background-cream group/design-root overflow-x-hidden font-body text-[#161413]">
-            <Navbar />
             <ContactHero />
             <div className="bg-white py-16 md:py-20">
                 <div className="layout-container flex h-full grow flex-col">
@@ -37,7 +34,6 @@ export default function ContactPage() {
                 </div>
             </div>
             <ContactCTA />
-            <Footer />
         </div>
     );
 }

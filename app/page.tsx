@@ -11,7 +11,6 @@ import Footer from "../components/Footer";
 export default function Home() {
   return (
     <div className="relative flex h-auto min-h-screen w-full flex-col bg-background-cream group/design-root overflow-x-hidden font-body text-[#161413]">
-      <Navbar />
       <HeroSection />
       <WhyYalaSection />
       <SafariPackages />
@@ -19,7 +18,6 @@ export default function Home() {
       <PlanTripSection />
       <ExploreZones />
       <ResponsibleTourism />
-      <Footer />
     </div>
   );
 }

@@ -1,39 +1,114 @@
+'use client';
+
+import { navLinks } from '@/lib/data';
 import Link from 'next/link';
-import React from 'react';
+import { usePathname } from 'next/navigation';
+import { useState } from 'react';
 
 export default function Navbar() {
-    return (
-        <div className="sticky top-0 z-50 bg-white/10 backdrop-blur-sm border-b border-[#f3f2f1]">
-            <div className="layout-container flex h-full grow flex-col">
-                <div className="px-4 md:px-10 flex flex-1 justify-center py-0">
-                    <div className="layout-content-container flex flex-col max-w-[1280px] flex-1">
-                        <header className="flex items-center justify-between whitespace-nowrap py-3">
-                            <Link href="/" className="flex items-center gap-4 text-primary">
-                                <div className="size-8 flex items-center justify-center text-primary">
-                                    <span className="material-symbols-outlined !text-3xl">landscape</span>
-                                </div>
-                                <h2 className="text-primary text-xl font-bold font-display leading-tight tracking-[-0.015em]">Yala Safari Bookings</h2>
-                            </Link>
-                            <div className="hidden md:flex flex-1 justify-end gap-8">
-                                <nav className="flex items-center gap-9">
-                                    <Link className="text-[#161413] hover:text-primary text-sm font-medium leading-normal transition-colors" href="/packages">Safaris</Link>
-                                    <Link className="text-[#161413] hover:text-primary text-sm font-medium leading-normal transition-colors" href="/blog">Blog</Link>
-                                    <Link className="text-[#161413] hover:text-primary text-sm font-medium leading-normal transition-colors" href="/gallery">Gallery</Link>
-                                    <Link className="text-[#161413] hover:text-primary text-sm font-medium leading-normal transition-colors" href="/about">About Us</Link>
-                                    <Link className="text-[#161413] hover:text-primary text-sm font-medium leading-normal transition-colors" href="/#planning">Plan Your Trip</Link>
-                                    <Link className="text-[#161413] hover:text-primary text-sm font-medium leading-normal transition-colors" href="#contact">Contact</Link>
-                                </nav>
-                                <button className="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 px-6 bg-primary hover:bg-[#4a3222] text-white text-sm font-bold leading-normal tracking-[0.015em] transition-colors shadow-sm">
-                                    <span className="truncate">Book a Safari</span>
-                                </button>
-                            </div>
-                            <div className="md:hidden text-[#161413]">
-                                <span className="material-symbols-outlined cursor-pointer">menu</span>
-                            </div>
-                        </header>
-                    </div>
-                </div>
+  const pathname = usePathname();
+  const [open, setOpen] = useState(false);
+
+  return (
+    <div className="top-0 z-50 bg-white/100 backdrop-blur-sm border-b border-[#f3f2f1]">
+      <div className="layout-container flex h-full grow flex-col">
+        <div className="px-4 md:px-10 flex flex-1 justify-center">
+          <div className="layout-content-container flex flex-col max-w-[1280px] flex-1">
+            <header className="flex items-center justify-between py-3">
+              {/* Logo */}
+              <Link href="/" className="flex items-center gap-4 text-primary">
+                <span className="material-symbols-outlined !text-3xl">landscape</span>
+                <h2 className="text-xl font-bold font-display">
+                  Yala Safari Bookings
+                </h2>
+              </Link>
+
+              {/* Desktop Nav */}
+              <div className="hidden md:flex items-center gap-8">
+                <nav className="flex items-center gap-9 relative">
+                  {navLinks.map((link) => {
+                    const isActive = pathname === link.href;
+
+                    return (
+                      <Link
+                        key={link.href}
+                        href={link.href}
+                        className="relative text-sm font-medium text-[#161413] hover:text-primary"
+                      >
+                        {link.label}
+                        <span
+                          className={`
+                            absolute left-0 -bottom-1 h-[2px] w-full bg-primary
+                            transition-transform duration-300 origin-left
+                            ${isActive ? 'scale-x-100' : 'scale-x-0'}
+                          `}
+                        />
+                      </Link>
+                    );
+                  })}
+                </nav>
+
+                <Link href="/packages">
+                  <button className="h-10 px-6 cursor-pointer rounded-lg bg-primary hover:bg-[#4a3222] text-white text-sm font-bold transition-colors">
+                    Book a Safari
+                  </button>
+                </Link>
+              </div>
+
+              {/* Mobile Hamburger */}
+              <button
+                className="md:hidden text-[#161413]"
+                onClick={() => setOpen(!open)}
+              >
+                <span className="material-symbols-outlined text-3xl">
+                  {open ? 'close' : 'menu'}
+                </span>
+              </button>
+            </header>
+
+            {/* Mobile Menu */}
+            <div
+              className={`
+                md:hidden overflow-hidden transition-all duration-300
+                ${open ? 'max-h-[500px] opacity-100' : 'max-h-0 opacity-0'}
+              `}
+            >
+              <nav className="flex flex-col gap-6 py-6">
+                {navLinks.map((link) => {
+                  const isActive = pathname === link.href;
+
+                  return (
+                    <Link
+                      key={link.href}
+                      href={link.href}
+                      onClick={() => setOpen(false)}
+                      className={`relative text-base font-medium
+                        ${isActive ? 'text-primary' : 'text-[#161413]'}
+                      `}
+                    >
+                      {link.label}
+                      <span
+                        className={`
+                          absolute left-0 -bottom-1 h-[2px] w-full bg-primary
+                          transition-transform duration-300 origin-left
+                          ${isActive ? 'scale-x-100' : 'scale-x-0'}
+                        `}
+                      />
+                    </Link>
+                  );
+                })}
+
+                <Link href="/packages" onClick={() => setOpen(false)}>
+                  <button className="mt-4 h-11 w-full rounded-lg bg-primary text-white font-bold">
+                    Book a Safari
+                  </button>
+                </Link>
+              </nav>
             </div>
+
+          </div>
         </div>
-    );
+      </div>
+    </div>
+  );
 }
