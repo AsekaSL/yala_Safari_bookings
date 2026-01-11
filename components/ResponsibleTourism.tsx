@@ -1,5 +1,7 @@
 import React from 'react';
 import { MdGroup, MdRecycling, MdSpeed } from 'react-icons/md';
+import home5 from '@/public/home/home5.png'
+import home6 from '@/public/home/home6.png'
 
 export default function ResponsibleTourism() {
     return (
@@ -32,11 +34,11 @@ export default function ResponsibleTourism() {
                                 <div className="grid grid-cols-2 gap-4">
                                     <div
                                         className="h-48 rounded-lg bg-cover bg-center"
-                                        style={{ backgroundImage: 'url("https://lh3.googleusercontent.com/aida-public/AB6AXuC02iI-Phj57mRdcqhi7ftq6HJG72LIz1Vy64_MyMIaUAnCOJOmfeyFiDoEGm15xD8NbHrR215QEhXPsS5-Y41t2Get_FXtFMkqbc6YvmM3zOiNmMglpb-z7sHQkgrDas4fg6vmu0FmnSQ4vfXEwlBuzgGMg5-DetRsSWWSDpZBDgNMVE8uR1qF2Q4NhI9kaytkODsYUevmcFG3mfmy9yXlmzvkYV_nyqmXBdzxtKoVPKipUGwM-gTWg4DVGrGOyzrZKLnql5UJfRcC")' }}
+                                        style={{ backgroundImage: `url(${home5.src})` }}
                                     ></div>
                                     <div
                                         className="h-48 rounded-lg bg-cover bg-center mt-8"
-                                        style={{ backgroundImage: 'url("https://lh3.googleusercontent.com/aida-public/AB6AXuDvBjBHCEf4BuO9RMROViYppoS4RDAFgVqVBawvSvdd0CN7SE271cz3d2STYq5HIlPCBr2Na8OKNTIKsoteTj46OLepkWGI0yHDC08opQulRQawDvq1gM4Bi_jgLwxJJnxxGWsLD3IAYhQvwBkAbtAIpN11Rgu1gJWEtRgJUPZv2DlBTXJD1Y35iow3XQZGXxvU1FPTum6qfORYlf4TUMtYOB9rcnNFw_lw8JGG_UydNy2mzWey1L4_4kGlEhhBX2jGTPx-01TIWJo6")' }}
+                                        style={{ backgroundImage: `url(${home6.src})` }}
                                     ></div>
                                 </div>
                             </div>

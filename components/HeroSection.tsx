@@ -1,5 +1,5 @@
 import Link from 'next/link';
-import React from 'react';
+import hero from '@/public/home/hero.png'
 
 export default function HeroSection() {
     return (
@@ -10,7 +10,7 @@ export default function HeroSection() {
                         <div
                             className="relative flex min-h-[750px] md:min-h-[80vh] flex-col gap-6 bg-cover bg-center bg-no-repeat items-start justify-end px-4 pb-12 md:px-20 md:pb-20"
                             style={{
-                                backgroundImage: 'linear-gradient(rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0.6) 100%), url("https://lh3.googleusercontent.com/aida-public/AB6AXuAj_W8k9MLHpZTXZyCCTy0PmtbEcbDfN9TqbPDPoTQ1W3b8_hJdf9eGkDlp4MY3kv6XJDOnZRu66U5BP0yCzYQD72-aCgQyKDgzs87L4C0DFpcLD5UFB2fEVjllx6UDygrbGLH3Tg5rmIsdpsdfPVUW4YBRHyBBFT6lffeBzygSaY_o-Rf0hUe7kkXBFB1wsVJn4t9iFopH7MyTNJPM31XXC7jEhHPrnuaNCZiGZWKIGV8ABVRCx359GuI5RGxEs9yCaH-gRM2j-ijy")'
+                                backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0.6) 100%), url(${hero.src})`
                             }}
                         >
                             <div className="flex flex-col gap-4 text-left max-w-[800px] animate-fade-in-up">
