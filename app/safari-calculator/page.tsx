@@ -6,7 +6,7 @@ import HelpWidget from "../../components/safari-calculator/HelpWidget";
 
 export default function SafariCalculatorPage() {
     return (
-        <div className="relative flex h-auto min-h-screen w-full flex-col bg-background-cream group/design-root overflow-x-hidden font-body text-[#161413]">
+        <div className="relative flex h-auto min-h-screen w-full flex-col bg-[#FFF5E1] group/design-root overflow-x-hidden font-body text-[#161413]">
             <div className="flex-1 w-full py-8 md:py-12 px-4 md:px-10">
                 <CalculatorHero />
                 <div className="max-w-[1280px] mx-auto grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">

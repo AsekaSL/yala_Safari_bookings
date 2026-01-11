@@ -57,13 +57,13 @@ export default function PlanTripSection() {
     ];
 
     return (
-        <div className="bg-background-cream py-16 md:py-24" id="planning">
+        <div className="bg-[#FFF5E1] py-16 md:py-24" id="planning">
             <div className="layout-container flex h-full grow flex-col">
                 <div className="px-4 md:px-20 flex flex-1 justify-center">
                     <div className="layout-content-container flex flex-col max-w-[1280px] flex-1">
                         <div className="flex flex-col gap-8">
                             <div className="flex flex-col gap-2">
-                                <h2 className="text-primary text-3xl font-bold font-display leading-tight">Plan Your Trip</h2>
+                                <h2 className="text-[#5a3e2a] text-3xl font-bold font-display leading-tight">Plan Your Trip</h2>
                                 <p className="text-[#7e746d]">Everything you need to know before you go.</p>
                             </div>
                             <div className="flex flex-col md:flex-row gap-8">
@@ -74,7 +74,7 @@ export default function PlanTripSection() {
                                             key={tab.name}
                                             onClick={() => setActiveTab(tab.name)}
                                             className={`text-left px-4 py-3 rounded-lg font-medium text-sm transition-all ${activeTab === tab.name
-                                                    ? 'bg-primary text-white shadow-md font-bold'
+                                                    ? 'bg-[#5a3e2a] text-white shadow-md font-bold'
                                                     : 'bg-white hover:bg-[#e3e0de] text-[#161413]'
                                                 }`}
                                         >
@@ -87,7 +87,7 @@ export default function PlanTripSection() {
                                     {tabs.map((tab) => (
                                         tab.name === activeTab && (
                                             <div key={tab.name} className="animate-fade-in">
-                                                <h3 className="text-xl font-bold text-primary mb-4 font-display">{tab.title}</h3>
+                                                <h3 className="text-xl font-bold text-[#5a3e2a] mb-4 font-display">{tab.title}</h3>
                                                 {tab.content}
                                             </div>
                                         )

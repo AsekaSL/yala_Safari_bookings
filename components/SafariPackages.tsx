@@ -4,11 +4,56 @@ import React, { useState } from 'react';
 import { packagesData, tabs } from '@/lib/data';
 import { Badge, PackageCategory, PackageDetail } from '@/types';
 import { useRouter } from "next/navigation";
+import { MdBakeryDining, MdConfirmationNumber, MdDirectionsCar, MdDoorFront, MdEco, MdFlag, MdForest, MdHome, MdLunchDining, MdPark, MdPets, MdPhotoCamera, MdReply, MdRestaurant, MdStar, MdSupportAgent, MdVerifiedUser, MdVisibility, MdWater, MdWbSunny } from "react-icons/md";
 
 export default function SafariPackages() {
   const [activeTab, setActiveTab] = useState(
     PackageCategory.PRIVATE_INCLUSIVE
   );
+
+  const getIcon = (iconName: string) => {
+
+        const style = 'text-[#FF914D] mr-3 text-3xl';
+
+        if(iconName === 'directions_car') {
+            return <MdDirectionsCar className={style} />
+        }else if (iconName === 'confirmation_number') {
+            return <MdConfirmationNumber className={style} />;
+        }else if (iconName === 'bakery_dining') {
+            return <MdBakeryDining className={style} />;
+        }else if (iconName === 'flag') {
+            return <MdFlag className={style} />;
+        }else if (iconName === 'water') {
+            return <MdWater className={style} />;
+        }else if (iconName === 'photo_camera') {
+            return <MdPhotoCamera className={style} />;
+        }else if (iconName === 'pets') {
+            return <MdPets className={style} />;
+        }else if (iconName === 'forest') {
+            return <MdForest className={style} />;
+        }else if (iconName === 'restaurant') {
+            return <MdRestaurant className={style} />;
+        }else if (iconName === 'visibility') {
+            return <MdVisibility className={style} />;
+        }else if (iconName === 'reply') {
+            return <MdReply className={style} />;
+        }else if (iconName === 'wb_sunny') {
+            return <MdWbSunny className={style} />;
+        }else if (iconName === 'gate') {
+            return <MdDoorFront className={style} />;
+        }else if (iconName === 'park') {
+            return <MdPark className={style} />;
+        }else if (iconName === 'eco') {
+            return <MdEco className={style} />;
+        }else if (iconName === 'lunch_dining') {
+            return <MdLunchDining className={style} />;
+        }else if (iconName === 'breakfast_dining') {
+            return <MdBakeryDining className={style} />;
+        }else if (iconName === 'home') {
+            return <MdHome className={style} />;
+        }
+        return ''
+    }
 
   const filteredPackages: PackageDetail[] = Object.values(packagesData).filter((pkg) => pkg.packageCategory === activeTab) 
   const router = useRouter();
@@ -16,11 +61,11 @@ export default function SafariPackages() {
     <main className="min-h-screen py-16 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
       {/* HEADER */}
       <header className="text-center mb-12 text-3xl sm:text-4xl md:text-5xl">
-        <span className="inline-block py-1 px-3 rounded-full bg-accent/10 text-accent font-semibold text-xs tracking-wider uppercase mb-3">
+        <span className="inline-block py-1 px-3 rounded-full bg-[#FF914D]/10 text-[#FF914D] font-semibold text-xs tracking-wider uppercase mb-3">
           Adventures Await
         </span>
 
-        <h1 className="text-4xl md:text-5xl font-display font-bold text-accent-brown dark:text-primary mb-6">
+        <h1 className="text-4xl md:text-5xl font-display font-bold text-[#5a3e2a] dark:text-[#5a3e2a] mb-6">
           Safari Packages
         </h1>
 
@@ -38,7 +83,7 @@ export default function SafariPackages() {
                 tabs.map((tab) => (
                     <button
                         key={tab.id}
-                        className={`px-6 py-2.5 px-4 sm:px-6 py-3 rounded-full text-sm font-medium ${activeTab === tab.id ? 'bg-accent text-white' : 'text-primary hover:text-white hover:bg-accent'} cursor-pointer whitespace-nowrap transition`}
+                        className={`px-6 py-2.5 px-4 sm:px-6 py-3 rounded-full text-sm font-medium ${activeTab === tab.id ? 'bg-[#FF914D] text-white' : 'text-[#5a3e2a] hover:text-white hover:bg-[#FF914D]'} cursor-pointer whitespace-nowrap transition`}
                         onClick={() => setActiveTab(tab.id)}
                     >
                         {tab.label}
@@ -56,7 +101,7 @@ export default function SafariPackages() {
             <div key={index} className="bg-white rounded-2xl overflow-hidden shadow-1xl hover:shadow-2xl transition transform hover:-translate-y-1 flex flex-col relative">
                 {
                     pkg.badge && pkg.badge === Badge.POPULAR && (
-                        <span className="absolute top-4 right-4 bg-primary text-white text-xs font-bold px-3 py-1 rounded-full shadow-lg z-10">
+                        <span className="absolute top-4 right-4 bg-[#5a3e2a] text-white text-xs font-bold px-3 py-1 rounded-full shadow-lg z-10">
                             Best Value
                         </span>
                     )
@@ -72,7 +117,7 @@ export default function SafariPackages() {
                 </div>
 
                 <div className="p-6 flex flex-col flex-1">
-                    <h3 className="text-xl font-display font-bold text-primary  mb-2">
+                    <h3 className="text-xl font-display font-bold text-[#5a3e2a]  mb-2">
                     {pkg.title}
                     </h3>
 
@@ -81,7 +126,7 @@ export default function SafariPackages() {
                     </p>
 
                     <div className="flex items-baseline mb-6">
-                    <span className="text-3xl font-bold text-accent">${pkg.pricingPerPerson ? `${pkg.pricingPerPerson[0].price}` : `${pkg.price.jeep}`}</span>
+                    <span className="text-3xl font-bold text-[#FF914D]">${pkg.pricingPerPerson ? `${pkg.pricingPerPerson[0].price}` : `${pkg.price.jeep}`}</span>
                     <span className="ml-1 text-sm text-gray-500 dark:text-gray-400">
                         / {pkg.pricingPerPerson ? "per person" : "per jeep"}
                     </span>
@@ -90,15 +135,17 @@ export default function SafariPackages() {
                     <ul className="space-y-3 mb-8 flex-1">
                         {
                             pkg.itinerary.map((item, index) => (
-                                <li key={index} className="flex items-center text-sm text-primary">
-                                    <span className="material-symbols-outlined text-accent mr-3">{item.icon}</span>
+                                <li key={index} className="flex items-center text-sm text-[#5a3e2a]">
+                                  {
+                                    getIcon(item.icon)
+                                  }
                                     {item.title}
                                 </li>
                             ))
                         }
                     </ul>
 
-                    <button onClick={() => router.push(`/packages/${pkg.id}`)} className="w-full cursor-pointer py-3 rounded-xl bg-primary hover:bg-primary/80 text-white font-medium transition shadow-lg">
+                    <button onClick={() => router.push(`/packages/${pkg.id}`)} className="w-full cursor-pointer py-3 rounded-xl bg-[#5a3e2a] hover:bg-[#5a3e2a]/80 text-white font-medium transition shadow-lg">
                         Book Now
                     </button>
                 </div>
@@ -110,30 +157,32 @@ export default function SafariPackages() {
       </div>
 
       {/* TRUST SECTION */}
-      <div className="mt-20 border-t border-background-dark/20 pt-12">
+      <div className="mt-20 border-t border-[#1d1815]/20 pt-12">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
           {[
             {
-              icon: 'stars',
+              icon: <MdStar className='text-3xl text-[#FF914D]' />,
               title: 'Top Rated Service',
               desc: 'Over 500+ 5-star reviews from happy travelers.',
             },
             {
-              icon: 'support_agent',
+              icon: <MdSupportAgent className='text-3xl text-[#FF914D]' />,
               title: '24/7 Support',
               desc: 'We are here to help you plan your trip anytime.',
             },
             {
-              icon: 'verified_user',
+              icon: <MdVerifiedUser className='text-3xl text-[#FF914D]' />,
               title: 'Secure Booking',
               desc: 'Your payment details are safe with us.',
             },
           ].map((item) => (
             <div key={item.title} className="flex flex-col items-center">
-              <div className="w-12 h-12 bg-accent/10 rounded-full flex items-center justify-center text-primary mb-4">
-                <span className="material-symbols-outlined text-accent">{item.icon}</span>
+              <div className="w-12 h-12 bg-[#FF914D]/10 rounded-full flex items-center justify-center text-[#5a3e2a] mb-4">
+                {
+                  item.icon
+                }
               </div>
-              <h4 className="font-bold text-primary">
+              <h4 className="font-bold text-[#5a3e2a]">
                 {item.title}
               </h4>
               <p className="text-sm text-gray-500 dark:text-gray-400 mt-2">

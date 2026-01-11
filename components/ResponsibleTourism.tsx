@@ -1,8 +1,9 @@
 import React from 'react';
+import { MdGroup, MdRecycling, MdSpeed } from 'react-icons/md';
 
 export default function ResponsibleTourism() {
     return (
-        <div className="bg-desert-brown py-16 md:py-24 text-white">
+        <div className="bg-[#2E1F14] py-16 md:py-24 text-white">
             <div className="layout-container flex h-full grow flex-col">
                 <div className="px-4 md:px-20 flex flex-1 justify-center">
                     <div className="layout-content-container flex flex-col max-w-[1280px] flex-1">
@@ -14,15 +15,15 @@ export default function ResponsibleTourism() {
                                 </p>
                                 <div className="flex flex-col gap-4 mt-4">
                                     <div className="flex items-center gap-4">
-                                        <div className="p-2 bg-white/10 rounded-full"><span className="material-symbols-outlined text-accent">recycling</span></div>
+                                        <div className="p-2 bg-white/10 rounded-full"><MdRecycling className="text-[#FF914D] text-3xl" /></div>
                                         <span className="font-medium">Plastic-free Safaris</span>
                                     </div>
                                     <div className="flex items-center gap-4">
-                                        <div className="p-2 bg-white/10 rounded-full"><span className="material-symbols-outlined text-accent">speed</span></div>
+                                        <div className="p-2 bg-white/10 rounded-full"><MdSpeed className="text-[#FF914D] text-3xl" /></div>
                                         <span className="font-medium">Strict Speed Limits</span>
                                     </div>
                                     <div className="flex items-center gap-4">
-                                        <div className="p-2 bg-white/10 rounded-full"><span className="material-symbols-outlined text-accent">group</span></div>
+                                        <div className="p-2 bg-white/10 rounded-full"><MdGroup className="text-[#FF914D] text-3xl" /></div>
                                         <span className="font-medium">Supporting Local Guides</span>
                                     </div>
                                 </div>

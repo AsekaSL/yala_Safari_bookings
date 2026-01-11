@@ -9,8 +9,7 @@ import BlogCTA from "../../components/blog/BlogCTA";
 
 export default function BlogPage() {
     return (
-        <div className="relative flex min-h-screen w-full flex-col bg-background-cream font-body text-desert-brown antialiased group/design-root overflow-x-hidden">
-
+        <div className="relative flex min-h-screen w-full flex-col bg-[#FFF5E1] font-body text-[#2E1F14] antialiased group/design-root overflow-x-hidden">
             <BlogHero />
             <BlogFeatured />
             <BlogCategories />

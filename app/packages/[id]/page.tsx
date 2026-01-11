@@ -6,11 +6,6 @@ import WildlifeGallery from "../../../components/package-detail/WildlifeGallery"
 import SidebarInfo from "../../../components/package-detail/SidebarInfo";
 import BottomBookingBar from "../../../components/package-detail/BottomBookingBar";
 
-
-
-// Since we are not using dynamic data yet, we can ignore the params for now
-// or just define them to satisfy Next.js types if needed.
-
 type Props = {
     params: Promise<{ id: string }>;
 };
@@ -21,7 +16,7 @@ export default async function PackageDetailPage({ params }: Props) {
 
     
     return (
-        <div className="relative flex h-auto min-h-screen w-full flex-col bg-background-light group/design-root overflow-x-hidden font-body text-[#161413]">
+        <div className="relative flex h-auto min-h-screen w-full flex-col bg-[#f7f7f6] group/design-root overflow-x-hidden font-body text-[#161413]">
             <DetailHero pkg={packageDetail} />
             <div className="layout-container flex flex-col items-center">
                 <div className="layout-content-container w-full max-w-[1280px] px-4 md:px-10 py-12 md:py-20">

@@ -1,4 +1,5 @@
 import React from 'react';
+import { MdDirectionsCar, MdInfo, MdLocalActivity } from 'react-icons/md';
 
 export default function FeesAndRentals() {
     return (
@@ -8,7 +9,7 @@ export default function FeesAndRentals() {
                     <div className="flex flex-col lg:flex-row gap-10">
                         <div className="flex-1 bg-white p-8 rounded-xl shadow-sm border-t-4 border-primary">
                             <h3 className="text-2xl font-bold font-display text-primary mb-6 flex items-center gap-2">
-                                <span className="material-symbols-outlined">local_activity</span> Entrance Fees (DWC)
+                                <MdLocalActivity className="text-2xl" /> Entrance Fees (DWC)
                             </h3>
                             <div className="space-y-4">
                                 <div className="flex justify-between items-center pb-3 border-b border-gray-100">
@@ -33,13 +34,14 @@ export default function FeesAndRentals() {
                                 </div>
                             </div>
                             <div className="mt-6 bg-accent/5 p-4 rounded-lg border border-accent/20 flex gap-3">
-                                <span className="material-symbols-outlined text-accent shrink-0">info</span>
+                                <MdInfo className="text-accent shrink-0 text-2xl" />
                                 <p className="text-sm text-[#5a3e2b]"><strong>Note:</strong> Payment in LKR Cash is highly recommended at the gate. Prices fluctuate with exchange rates.</p>
                             </div>
                         </div>
                         <div className="flex-1 bg-white p-8 rounded-xl shadow-sm border-t-4 border-sky-blue">
                             <h3 className="text-2xl font-bold font-display text-primary mb-6 flex items-center gap-2">
-                                <span className="material-symbols-outlined">directions_car</span> Safari Jeep Rental
+                                <MdDirectionsCar className="text-2xl" />
+                                Safari Jeep Rental
                             </h3>
                             <div className="space-y-4">
                                 <div className="flex justify-between items-center pb-3 border-b border-gray-100">

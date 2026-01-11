@@ -9,7 +9,7 @@ import GalleryCTA from "../../components/gallery/GalleryCTA";
 
 export default function GalleryPage() {
     return (
-        <div className="relative flex min-h-screen w-full flex-col bg-background-light font-body text-desert-brown antialiased group/design-root overflow-x-hidden">
+        <div className="relative flex min-h-screen w-full flex-col bg-[#f7f7f6] font-body text-[#2E1F14] antialiased group/design-root overflow-x-hidden">
             <GalleryHero />
             <GalleryIntro />
             <CategoryFilter />

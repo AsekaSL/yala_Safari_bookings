@@ -2,6 +2,7 @@
 
 import { useState, useRef, useEffect } from "react";
 import { createPortal } from "react-dom";
+import { MdExpandMore } from "react-icons/md";
 
 export default function Dropdown({ selectedOption, setSelectedOption, options }: {selectedOption: any, setSelectedOption: (option: any) => void, options: any[] }) {
   const [open, setOpen] = useState(false);
@@ -41,9 +42,7 @@ export default function Dropdown({ selectedOption, setSelectedOption, options }:
         className="flex h-9 items-center gap-2 rounded-lg bg-[#383429] hover:bg-[#4a4536] px-4 text-white text-sm font-medium transition-colors group"
       >
         {selectedOption}
-        <span className="material-symbols-outlined text-[18px] text-gray-400 group-hover:text-white">
-          expand_more
-        </span>
+        <MdExpandMore className="text-[18px] text-gray-400 group-hover:text-white" />
       </button>
 
       {open &&

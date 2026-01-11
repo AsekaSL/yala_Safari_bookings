@@ -8,7 +8,7 @@ export default function BlogHero() {
                 style={{ backgroundImage: 'linear-gradient(rgba(46, 31, 20, 0.4), rgba(46, 31, 20, 0.7)), url("https://lh3.googleusercontent.com/aida-public/AB6AXuAj_W8k9MLHpZTXZyCCTy0PmtbEcbDfN9TqbPDPoTQ1W3b8_hJdf9eGkDlp4MY3kv6XJDOnZRu66U5BP0yCzYQD72-aCgQyKDgzs87L4C0DFpcLD5UFB2fEVjllx6UDygrbGLH3Tg5rmIsdpsdfPVUW4YBRHyBBFT6lffeBzygSaY_o-Rf0hUe7kkXBFB1wsVJn4t9iFopH7MyTNJPM31XXC7jEhHPrnuaNCZiGZWKIGV8ABVRCx359GuI5RGxEs9yCaH-gRM2j-ijy")' }}
             >
                 <div className="flex flex-col gap-4 max-w-[900px] animate-fade-in-up">
-                    <span className="text-accent font-bold uppercase tracking-widest text-sm md:text-base bg-black/20 backdrop-blur-sm px-4 py-1 rounded-full self-center border border-white/10">Official Blog</span>
+                    <span className="text-[#FF914D] font-bold uppercase tracking-widest text-sm md:text-base bg-black/20 backdrop-blur-sm px-4 py-1 rounded-full self-center border border-white/10">Official Blog</span>
                     <h1 className="text-white text-4xl font-bold font-display leading-tight tracking-tight md:text-6xl drop-shadow-lg">
                         Yala National Park Blog
                     </h1>

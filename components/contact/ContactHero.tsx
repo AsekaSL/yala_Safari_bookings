@@ -11,7 +11,7 @@ export default function ContactHero() {
                             style={{ backgroundImage: 'linear-gradient(rgba(46, 31, 20, 0.4) 0%, rgba(46, 31, 20, 0.6) 100%), url("https://lh3.googleusercontent.com/aida-public/AB6AXuCKxeLK39nuyogrN0gZ-lqLg3OWTzYx3qWNWThEzJAlFfO-Cd3aFXiMlkDxCg9c6YDsoW1gP6t37lp7Ivd-FNnud32FCkSlQ26xMV46FxIGA0u7qGP8LxAR-M5se5KI8JYeqsCrICDoOQsyUEG5-mB2jNX5WVIvtTsi6MzhG-HR4JBHxOFJzQepm4TE2wmERiEGsZyRfAHms2bLL7ueNDdY27OBFReLKDkSZcPTzjb8Fop2eVENM-A4OtxuVXlzoN9A4FPHCIXK-M_d")' }}
                         >
                             <div className="flex flex-col gap-4 max-w-[800px] animate-fade-in-up">
-                                <span className="text-accent font-bold uppercase tracking-widest text-sm md:text-base">We're Here to Help</span>
+                                <span className="text-[#FF914D] font-bold uppercase tracking-widest text-sm md:text-base">We're Here to Help</span>
                                 <h1 className="text-white text-4xl font-black font-display leading-tight tracking-[-0.02em] md:text-5xl lg:text-6xl drop-shadow-sm">
                                     Contact – Your Yala National Park Experts
                                 </h1>
