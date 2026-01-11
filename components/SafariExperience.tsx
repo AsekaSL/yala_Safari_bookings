@@ -1,5 +1,6 @@
 import { durationTypes } from '@/lib/data';
 import { DurationTypes } from '@/types';
+import Image from 'next/image';
 import React from 'react';
 
 export default function SafariExperience() {
@@ -17,8 +18,10 @@ export default function SafariExperience() {
                                 durationTypes.map((durationType : DurationTypes, index : number) => (
                                     <React.Fragment key={durationType.title}>
                                         <div   className="flex flex-col items-center gap-1 pt-3">
-                                            <img
+                                            <Image
                                                 className="bg-center bg-no-repeat bg-cover rounded-full object-cover size-12 border-4 border-background-cream shadow-lg z-10"
+                                                width={48}
+                                                height={48}
                                                 alt={durationType.title}
                                                 src={durationType.src}
                                             />
