@@ -1,4 +1,5 @@
 import React from 'react';
+import { MdArrowForward } from 'react-icons/md';
 
 export default function FeaturedArticle() {
     return (
@@ -12,20 +13,20 @@ export default function FeaturedArticle() {
                         ></div>
                     </div>
                     <div className="p-8 md:p-16 flex flex-col justify-center gap-6 bg-white relative">
-                        <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-primary to-accent"></div>
+                        <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-[#5a3e2a] to-[#FF914D]"></div>
                         <div className="flex items-center gap-3">
-                            <span className="px-3 py-1 bg-primary/10 text-primary text-xs font-bold uppercase tracking-wider rounded-md">Latest Sightings</span>
+                            <span className="px-3 py-1 bg-[#5a3e2a]/10 text-[#5a3e2a] text-xs font-bold uppercase tracking-wider rounded-md">Latest Sightings</span>
                             <span className="text-[#7e746d] text-xs font-medium">Oct 24, 2023</span>
                         </div>
-                        <h2 className="text-3xl md:text-5xl font-bold font-display text-desert-brown leading-tight group-hover:text-primary transition-colors">
+                        <h2 className="text-3xl md:text-5xl font-bold font-display text-[#1d1815] leading-tight group-hover:text-[#5a3e2a] transition-colors">
                             Sri Lankan Leopard: Apex Predator of Yala
                         </h2>
                         <p className="text-[#5a5a5a] text-lg leading-relaxed">
                             With the highest density of leopards in the world, Block 1 offers unparalleled opportunities to spot Panthera pardus kotiya. Learn about their behavior, territories, and how to spot them in the dense scrub.
                         </p>
-                        <div className="flex items-center gap-2 text-accent font-bold mt-2 group-hover:translate-x-2 transition-transform">
+                        <div className="flex items-center gap-2 text-[#FF914D] font-bold mt-2 group-hover:translate-x-2 transition-transform">
                             <span>Read Article</span>
-                            <span className="material-symbols-outlined text-sm">arrow_forward</span>
+                            <MdArrowForward className='text-sm' />
                         </div>
                     </div>
                 </div>

@@ -1,15 +1,21 @@
-import React from 'react';
+
+'use client';
 import { PackageDetail } from '@/types';
+import { MdAccountBalance, MdCreditCard, MdFamilyRestroom, MdFavorite, MdPhotoCamera } from 'react-icons/md';
+import { useRouter } from 'next/navigation';
 
 export default function SidebarInfo({ pkg }: { pkg: PackageDetail }) {
+
+    const router = useRouter();
+
     return (
         <div className="sticky top-24 flex flex-col gap-6">
-            <div className="bg-background-cream p-6 rounded-xl border border-[#e3e0de]">
-                <h3 className="text-lg font-bold font-display text-primary mb-4">Who This Is Best For</h3>
+            <div className="bg-[#FFF5E1] p-6 rounded-xl border border-[#e3e0de]">
+                <h3 className="text-lg font-bold font-display text-[#5a3e2a] mb-4">Who This Is Best For</h3>
                 <div className="flex flex-col gap-4">
                     <div className="flex gap-3">
-                        <div className="size-8 rounded-full bg-primary/10 flex items-center justify-center text-primary shrink-0">
-                            <span className="material-symbols-outlined text-sm">photo_camera</span>
+                        <div className="size-8 rounded-full bg-[#5a3e2a]/10 flex items-center justify-center text-[#5a3e2a] shrink-0">
+                            <MdPhotoCamera className="text-sm" />
                         </div>
                         <div>
                             <h4 className="font-bold text-sm text-[#161413]">Photographers</h4>
@@ -17,8 +23,8 @@ export default function SidebarInfo({ pkg }: { pkg: PackageDetail }) {
                         </div>
                     </div>
                     <div className="flex gap-3">
-                        <div className="size-8 rounded-full bg-primary/10 flex items-center justify-center text-primary shrink-0">
-                            <span className="material-symbols-outlined text-sm">family_restroom</span>
+                        <div className="size-8 rounded-full bg-[#5a3e2a]/10 flex items-center justify-center text-[#5a3e2a] shrink-0">
+                            <MdFamilyRestroom className="text-sm" />
                         </div>
                         <div>
                             <h4 className="font-bold text-sm text-[#161413]">Families</h4>
@@ -26,8 +32,8 @@ export default function SidebarInfo({ pkg }: { pkg: PackageDetail }) {
                         </div>
                     </div>
                     <div className="flex gap-3">
-                        <div className="size-8 rounded-full bg-primary/10 flex items-center justify-center text-primary shrink-0">
-                            <span className="material-symbols-outlined text-sm">favorite</span>
+                        <div className="size-8 rounded-full bg-[#5a3e2a]/10 flex items-center justify-center text-[#5a3e2a] shrink-0">
+                            <MdFavorite className="text-sm" />
                         </div>
                         <div>
                             <h4 className="font-bold text-sm text-[#161413]">Couples</h4>
@@ -37,7 +43,7 @@ export default function SidebarInfo({ pkg }: { pkg: PackageDetail }) {
                 </div>
             </div>
             <div className="bg-white p-6 rounded-xl border border-[#e3e0de] shadow-sm">
-                <h3 className="text-lg font-bold font-display text-primary mb-4">Pricing & Policies</h3>
+                <h3 className="text-lg font-bold font-display text-[#5a3e2a] mb-4">Pricing & Policies</h3>
                 <div className="space-y-4">
                     <div className="border-b border-gray-100 pb-2">
                         {
@@ -63,17 +69,17 @@ export default function SidebarInfo({ pkg }: { pkg: PackageDetail }) {
                     <div className="flex flex-col gap-1">
                         <h4 className="text-xs font-bold uppercase text-[#7e746d]">Payment Methods</h4>
                         <div className="flex gap-2 text-[#5a5a5a]">
-                            <span className="material-symbols-outlined text-lg">credit_card</span>
-                            <span className="material-symbols-outlined text-lg">account_balance</span>
+                            <MdCreditCard className="text-lg" />
+                            <MdAccountBalance className="text-lg" />
                             <span className="text-xs pt-0.5">Cash on arrival accepted</span>
                         </div>
                     </div>
                 </div>
             </div>
-            <div className="bg-primary p-6 rounded-xl text-white text-center">
+            <div className="bg-[#5a3e2a] p-6 rounded-xl text-white text-center">
                 <h4 className="font-bold text-lg font-display mb-2">Ready for Adventure?</h4>
                 <p className="text-sm text-white/80 mb-4">Book your morning safari now and secure the best jeep.</p>
-                <button className="w-full bg-accent hover:bg-orange-600 text-white font-bold py-3 rounded-lg transition-colors shadow-md">
+                <button onClick={() => router.push('/safari-calculator')} className="w-full cursor-pointer bg-[#FF914D] hover:bg-orange-600 text-white font-bold py-3 rounded-lg transition-colors shadow-md">
                     Check Availability
                 </button>
             </div>

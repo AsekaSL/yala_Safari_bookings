@@ -9,7 +9,7 @@ export default function SafariExperience() {
                 <div className="px-4 md:px-20 flex flex-1 justify-center">
                     <div className="layout-content-container flex flex-col max-w-[960px] flex-1">
                         <div className="flex flex-col items-center mb-12">
-                            <h2 className="text-primary text-3xl font-bold font-display text-center mb-4">A Day in the Wild</h2>
+                            <h2 className="text-[#5a3e2a] text-3xl font-bold font-display text-center mb-4">A Day in the Wild</h2>
                             <p className="text-[#7e746d] text-center max-w-2xl">Timing is everything in the wild. Our experts have curated the perfect schedules to maximize your sightings.</p>
                         </div>
                         <div className="grid grid-cols-[auto_1fr] gap-x-6 md:gap-x-10 px-4">
@@ -29,8 +29,8 @@ export default function SafariExperience() {
                                             }
                                         </div>
                                         <div className="flex flex-1 flex-col py-3 pb-12">
-                                            <h3 className="text-primary text-xl font-bold font-display">{durationType.title}</h3>
-                                            <p className="text-accent text-sm font-bold mb-2">{durationType.duration}</p>
+                                            <h3 className="text-[#5a3e2a] text-xl font-bold font-display">{durationType.title}</h3>
+                                            <p className="text-[#FF914D] text-sm font-bold mb-2">{durationType.duration}</p>
                                             <p className="text-[#5a5a5a] leading-relaxed">{durationType.description}</p>
                                         </div>
                                     </React.Fragment>

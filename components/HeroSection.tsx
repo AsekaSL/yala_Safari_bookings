@@ -14,7 +14,7 @@ export default function HeroSection() {
                             }}
                         >
                             <div className="flex flex-col gap-4 text-left max-w-[800px] animate-fade-in-up">
-                                <span className="text-accent font-bold uppercase tracking-widest text-sm md:text-base">Welcome to the Jungle</span>
+                                <span className="text-[#FF914D] font-bold uppercase tracking-widest text-sm md:text-base">Welcome to the Jungle</span>
                                 <h1 className="text-white text-4xl font-black font-display leading-tight tracking-[-0.02em] md:text-6xl lg:text-7xl drop-shadow-sm">
                                     Unveiling the Wild Heart of Sri Lanka
                                 </h1>
@@ -24,7 +24,7 @@ export default function HeroSection() {
                             </div>
                             <div className="flex flex-wrap gap-4 mt-4">
                                 <Link href='/packages'>
-                                    <button className="flex min-w-[140px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-12 px-8 bg-primary hover:bg-[#4a3222] text-white text-base font-bold leading-normal tracking-[0.015em] transition-all shadow-lg hover:translate-y-[-2px]">
+                                    <button className="flex min-w-[140px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-12 px-8 bg-[#5a3e2a] hover:bg-[#4a3222] text-white text-base font-bold leading-normal tracking-[0.015em] transition-all shadow-lg hover:translate-y-[-2px]">
                                         <span className="truncate">Book a Safari</span>
                                     </button>
                                 </Link>

@@ -1,4 +1,5 @@
 import React from 'react';
+import { MdDirectionsCar, MdFort, MdTerrain } from 'react-icons/md';
 
 export default function GettingThere() {
     return (
@@ -6,13 +7,13 @@ export default function GettingThere() {
             <div className="layout-container flex flex-col items-center">
                 <div className="max-w-[1000px] w-full px-4 md:px-10">
                     <div className="mb-10 text-center">
-                        <h2 className="text-primary text-3xl font-bold font-display mb-4">Getting to Yala National Park</h2>
+                        <h2 className="text-[#5a3e2a] text-3xl font-bold font-display mb-4">Getting to Yala National Park</h2>
                         <p className="text-[#5a3e2b]/80">Most visitors base themselves in Tissamaharama or Kataragama. Here is how to get there.</p>
                     </div>
                     <div className="flex flex-col gap-6">
                         <div className="border border-gray-200 rounded-xl overflow-hidden">
-                            <div className="bg-background-light p-4 flex justify-between items-center cursor-pointer border-b border-gray-100">
-                                <h3 className="font-bold text-primary flex items-center gap-2"><span className="material-symbols-outlined text-sky-blue">directions_car</span> From Colombo</h3>
+                            <div className="bg-[#f7f7f6] p-4 flex justify-between items-center cursor-pointer border-b border-gray-100">
+                                <h3 className="font-bold text-[#5a3e2a] flex items-center gap-2"> <MdDirectionsCar className='text-[#7FB3C8] text-2xl' /> From Colombo</h3>
                                 <span className="text-sm font-medium text-gray-500">~260km • 4.5 - 5.5 Hours</span>
                             </div>
                             <div className="p-6 bg-white grid grid-cols-1 md:grid-cols-3 gap-6">
@@ -31,8 +32,8 @@ export default function GettingThere() {
                             </div>
                         </div>
                         <div className="border border-gray-200 rounded-xl overflow-hidden">
-                            <div className="bg-background-light p-4 flex justify-between items-center cursor-pointer border-b border-gray-100">
-                                <h3 className="font-bold text-primary flex items-center gap-2"><span className="material-symbols-outlined text-sky-blue">terrain</span> From Ella</h3>
+                            <div className="bg-[#f7f7f6] p-4 flex justify-between items-center cursor-pointer border-b border-gray-100">
+                                <h3 className="font-bold text-[#5a3e2a] flex items-center gap-2"> <MdTerrain className='text-[#7FB3C8] text-2xl' /> From Ella</h3>
                                 <span className="text-sm font-medium text-gray-500">~90km • 2.5 - 3 Hours</span>
                             </div>
                             <div className="p-6 bg-white grid grid-cols-1 md:grid-cols-2 gap-6">
@@ -48,7 +49,7 @@ export default function GettingThere() {
                         </div>
                         <div className="border border-gray-200 rounded-xl overflow-hidden">
                             <div className="bg-background-light p-4 flex justify-between items-center cursor-pointer border-b border-gray-100">
-                                <h3 className="font-bold text-primary flex items-center gap-2"><span className="material-symbols-outlined text-sky-blue">fort</span> From Galle / South Coast</h3>
+                                <h3 className="font-bold text-primary flex items-center gap-2"> <MdFort className='text-[#7FB3C8] text-2xl' /> From Galle / South Coast</h3>
                                 <span className="text-sm font-medium text-gray-500">~150km • 3 - 3.5 Hours</span>
                             </div>
                             <div className="p-6 bg-white">

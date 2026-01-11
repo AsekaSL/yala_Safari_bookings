@@ -15,7 +15,7 @@ export default function GalleryHero() {
                     <p className="text-gray-100 text-lg md:text-2xl font-light tracking-wide drop-shadow-md">
                         A Visual Journey into the Heart of Yala’s Wilderness
                     </p>
-                    <p className="text-accent text-sm md:text-base font-medium max-w-2xl mx-auto uppercase tracking-widest mt-4">
+                    <p className="text-[#FF914D] text-sm md:text-base font-medium max-w-2xl mx-auto uppercase tracking-widest mt-4">
                         Experience the untamed beauty through stunning photography and immersive videos
                     </p>
                 </div>

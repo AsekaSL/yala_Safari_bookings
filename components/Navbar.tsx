@@ -4,6 +4,7 @@ import { navLinks } from '@/lib/data';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import { useState } from 'react';
+import { MdClose, MdLandscape, MdMenu, MdOpenInBrowser } from 'react-icons/md';
 
 export default function Navbar() {
   const pathname = usePathname();
@@ -16,8 +17,8 @@ export default function Navbar() {
           <div className="layout-content-container flex flex-col max-w-[1280px] flex-1">
             <header className="flex items-center justify-between py-3">
               {/* Logo */}
-              <Link href="/" className="flex items-center gap-4 text-primary">
-                <span className="material-symbols-outlined !text-3xl">landscape</span>
+              <Link href="/" className="flex items-center gap-4 text-[#5a3e2a]">
+                <MdLandscape className='text-3xl' />
                 <h2 className="text-xl font-bold font-display">
                   Yala Safari Bookings
                 </h2>
@@ -33,12 +34,12 @@ export default function Navbar() {
                       <Link
                         key={link.href}
                         href={link.href}
-                        className="relative text-sm font-medium text-[#161413] hover:text-primary"
+                        className="relative text-sm font-medium text-[#161413] hover:text-[#5a3e2a]"
                       >
                         {link.label}
                         <span
                           className={`
-                            absolute left-0 -bottom-1 h-[2px] w-full bg-primary
+                            absolute left-0 -bottom-1 h-[2px] w-full bg-[#5a3e2a]
                             transition-transform duration-300 origin-left
                             ${isActive ? 'scale-x-100' : 'scale-x-0'}
                           `}
@@ -49,7 +50,7 @@ export default function Navbar() {
                 </nav>
 
                 <Link href="/packages">
-                  <button className="h-10 px-6 cursor-pointer rounded-lg bg-primary hover:bg-[#4a3222] text-white text-sm font-bold transition-colors">
+                  <button className="h-10 px-6 cursor-pointer rounded-lg bg-[#5a3e2a] hover:bg-[#4a3222] text-white text-sm font-bold transition-colors">
                     Book a Safari
                   </button>
                 </Link>
@@ -60,8 +61,8 @@ export default function Navbar() {
                 className="md:hidden text-[#161413]"
                 onClick={() => setOpen(!open)}
               >
-                <span className="material-symbols-outlined text-3xl">
-                  {open ? 'close' : 'menu'}
+                <span className=" text-3xl">
+                  {open ? <MdClose /> : <MdMenu />}
                 </span>
               </button>
             </header>
@@ -83,13 +84,13 @@ export default function Navbar() {
                       href={link.href}
                       onClick={() => setOpen(false)}
                       className={`relative text-base font-medium
-                        ${isActive ? 'text-primary' : 'text-[#161413]'}
+                        ${isActive ? 'text-[#5a3e2a]' : 'text-[#161413]'}
                       `}
                     >
                       {link.label}
                       <span
                         className={`
-                          absolute left-0 -bottom-1 h-[2px] w-full bg-primary
+                          absolute left-0 -bottom-1 h-[2px] w-full bg-[#5a3e2a]
                           transition-transform duration-300 origin-left
                           ${isActive ? 'scale-x-100' : 'scale-x-0'}
                         `}
@@ -99,7 +100,7 @@ export default function Navbar() {
                 })}
 
                 <Link href="/packages" onClick={() => setOpen(false)}>
-                  <button className="mt-4 h-11 w-full rounded-lg bg-primary text-white font-bold">
+                  <button className="mt-4 h-11 w-full rounded-lg bg-[#5a3e2a] text-white font-bold">
                     Book a Safari
                   </button>
                 </Link>

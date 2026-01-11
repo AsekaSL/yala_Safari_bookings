@@ -3,7 +3,7 @@ import React from 'react';
 export default function WildlifeGallery() {
     return (
         <div>
-            <h3 className="text-2xl font-bold font-display text-primary mb-6">Wildlife You May See</h3>
+            <h3 className="text-2xl font-bold font-display text-[#5a3e2a] mb-6">Wildlife You May See</h3>
             <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
                 <div className="group relative aspect-square overflow-hidden rounded-xl bg-gray-100">
                     <img alt="Leopard" className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-110" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAj_W8k9MLHpZTXZyCCTy0PmtbEcbDfN9TqbPDPoTQ1W3b8_hJdf9eGkDlp4MY3kv6XJDOnZRu66U5BP0yCzYQD72-aCgQyKDgzs87L4C0DFpcLD5UFB2fEVjllx6UDygrbGLH3Tg5rmIsdpsdfPVUW4YBRHyBBFT6lffeBzygSaY_o-Rf0hUe7kkXBFB1wsVJn4t9iFopH7MyTNJPM31XXC7jEhHPrnuaNCZiGZWKIGV8ABVRCx359GuI5RGxEs9yCaH-gRM2j-ijy" />

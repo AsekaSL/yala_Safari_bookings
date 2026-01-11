@@ -1,4 +1,5 @@
 import React from 'react';
+import { MdCheckCircle } from 'react-icons/md';
 
 export default function Guardians() {
     return (
@@ -12,10 +13,10 @@ export default function Guardians() {
                     <div className="layout-content-container flex flex-col max-w-[1280px] flex-1">
                         <div className="flex flex-col lg:flex-row gap-16 items-center">
                             <div className="flex-1 space-y-6">
-                                <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-white/10 border border-white/20 text-xs font-bold tracking-wider uppercase text-accent">
-                                    <span className="w-2 h-2 rounded-full bg-accent"></span> Responsible Tourism
+                                <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-white/10 border border-white/20 text-xs font-bold tracking-wider uppercase text-[#FF914D]">
+                                    <span className="w-2 h-2 rounded-full bg-[#FF914D]"></span> Responsible Tourism
                                 </div>
-                                <h2 className="text-3xl md:text-5xl font-bold font-display leading-tight text-background-cream">
+                                <h2 className="text-3xl md:text-5xl font-bold font-display leading-tight text-[#FFF5E1]">
                                     Guardians of the Jungle
                                 </h2>
                                 <p className="text-gray-300 text-lg leading-relaxed">
@@ -23,14 +24,14 @@ export default function Guardians() {
                                 </p>
                                 <ul className="space-y-4 mt-4">
                                     <li className="flex items-start gap-4">
-                                        <span className="material-symbols-outlined text-accent mt-1">check_circle</span>
+                                        <MdCheckCircle className="text-[#FF914D] mt-1 text-2xl" />
                                         <div>
                                             <h5 className="font-bold text-white">Respecting the Residents</h5>
                                             <p className="text-gray-400 text-sm">We maintain safe distances from animals to reduce stress and ensure natural behavior.</p>
                                         </div>
                                     </li>
                                     <li className="flex items-start gap-4">
-                                        <span className="material-symbols-outlined text-accent mt-1">check_circle</span>
+                                        <MdCheckCircle className="text-[#FF914D] mt-1 text-2xl" />
                                         <div>
                                             <h5 className="font-bold text-white">Leave No Trace</h5>
                                             <p className="text-gray-400 text-sm">A strict zero-plastic policy in our jeeps to keep the national park pristine.</p>
@@ -42,7 +43,7 @@ export default function Guardians() {
                                 <div className="rounded-2xl overflow-hidden shadow-2xl border-4 border-white/10">
                                     <img alt="Safari jeep maintaining respectful distance" className="w-full h-auto object-cover min-h-[300px]" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDvBjBHCEf4BuO9RMROViYppoS4RDAFgVqVBawvSvdd0CN7SE271cz3d2STYq5HIlPCBr2Na8OKNTIKsoteTj46OLepkWGI0yHDC08opQulRQawDvq1gM4Bi_jgLwxJJnxxGWsLD3IAYhQvwBkAbtAIpN11Rgu1gJWEtRgJUPZv2DlBTXJD1Y35iow3XQZGXxvU1FPTum6qfORYlf4TUMtYOB9rcnNFw_lw8JGG_UydNy2mzWey1L4_4kGlEhhBX2jGTPx-01TIWJo6" />
                                 </div>
-                                <div className="absolute -bottom-6 -left-6 bg-primary p-6 rounded-lg shadow-xl hidden md:block max-w-xs">
+                                <div className="absolute -bottom-6 -left-6 bg-[#5a3e2a] p-6 rounded-lg shadow-xl hidden md:block max-w-xs">
                                     <p className="text-white font-serif italic">"We don't inherit the earth from our ancestors, we borrow it from our children."</p>
                                 </div>
                             </div>

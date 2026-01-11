@@ -1,7 +1,22 @@
 import { feature } from '@/lib/data';
 import { FeatureContainer } from '@/types';
+import { GiPhotoCamera } from 'react-icons/gi';
+import { MdPestControlRodent, MdPets, MdWaterDrop } from 'react-icons/md';
 
 export default function WhyYalaSection() {
+
+    const getIcon = (iconName: string) => {
+        if(iconName === 'pets') {
+            return <MdPets className="text-3xl" />;
+        } else if(iconName === 'pest_control_rodent') {
+            return <MdPestControlRodent className="text-3xl" />;
+        } else if(iconName === 'photo_camera') {
+            return <GiPhotoCamera className="text-3xl" />;
+        } else if(iconName === 'water_drop') {
+            return <MdWaterDrop className="text-3xl" />;
+        }
+    }
+
     return (
         <div className="bg-white py-16 md:py-24">
             <div className="layout-container flex h-full grow flex-col">
@@ -9,7 +24,7 @@ export default function WhyYalaSection() {
                     <div className="layout-content-container flex flex-col max-w-[1280px] flex-1">
                         <div className="flex flex-col gap-10">
                             <div className="flex flex-col gap-4 text-center md:text-left">
-                                <h2 className="text-primary tracking-tight text-3xl font-bold font-display leading-tight md:text-4xl">
+                                <h2 className="text-[#5a3e2a] tracking-tight text-3xl font-bold font-display leading-tight md:text-4xl">
                                     Why Choose Yala?
                                 </h2>
                                 <p className="text-[#7e746d] text-lg font-normal leading-relaxed max-w-[720px]">
@@ -20,9 +35,9 @@ export default function WhyYalaSection() {
                                 {/* Feature */}
                                 {
                                     feature.map((feat : FeatureContainer) => (
-                                        <div key={feat.icon} className="flex flex-col gap-4 rounded-xl border border-[#e3e0de] bg-background-light p-6 hover:shadow-md transition-shadow group">
+                                        <div key={feat.icon} className="flex flex-col gap-4 rounded-xl border border-[#e3e0de] bg-[#f7f7f6] p-6 hover:shadow-md transition-shadow group">
                                             <div className={`size-12 rounded-full flex items-center justify-center group-hover:text-white transition-colors ${feat.style}`}>
-                                                <span className="material-symbols-outlined">{feat.icon}</span>
+                                                {getIcon(feat.icon)}
                                             </div>
                                             <div className="flex flex-col gap-2">
                                                 <h3 className="text-[#161413] text-xl font-bold font-display leading-tight">{feat.title}</h3>

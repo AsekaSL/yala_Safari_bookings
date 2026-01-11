@@ -1,4 +1,4 @@
-import React from 'react';
+import { MdNaturePeople } from "react-icons/md";
 
 export default function OurStory() {
     return (
@@ -8,8 +8,8 @@ export default function OurStory() {
                     <div className="layout-content-container flex flex-col max-w-[1280px] flex-1">
                         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
                             <div className="flex flex-col gap-6">
-                                <span className="text-accent font-bold uppercase tracking-widest text-sm">Who We Are</span>
-                                <h2 className="text-primary text-3xl font-bold font-display leading-tight md:text-4xl">
+                                <span className="text-[#FF914D] font-bold uppercase tracking-widest text-sm">Who We Are</span>
+                                <h2 className="text-[#5a3e2a] text-3xl font-bold font-display leading-tight md:text-4xl">
                                     Born from a Passion for the Wilderness
                                 </h2>
                                 <p className="text-[#7e746d] text-lg font-normal leading-relaxed">
@@ -20,7 +20,7 @@ export default function OurStory() {
                                 </p>
                                 <div className="flex items-center gap-4 mt-2">
                                     <div className="h-px bg-gray-200 flex-1"></div>
-                                    <span className="material-symbols-outlined text-primary text-3xl">nature_people</span>
+                                    <MdNaturePeople className="text-[#5a3e2a] text-3xl" />
                                     <div className="h-px bg-gray-200 flex-1"></div>
                                 </div>
                             </div>

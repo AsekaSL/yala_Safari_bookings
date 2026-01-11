@@ -11,7 +11,7 @@ import GuideCTA from "../../components/visitor-guide/GuideCTA";
 
 export default function VisitorGuidePage() {
     return (
-        <div className="relative flex h-auto min-h-screen w-full flex-col bg-background-light group/design-root overflow-x-hidden font-body text-[#2E1F14]">
+        <div className="relative flex h-auto min-h-screen w-full flex-col bg-[#f7f7f6] group/design-root overflow-x-hidden font-body text-[#2E1F14]">
             <GuideHero />
             <PreArrivalChecklist />
             <GettingThere />

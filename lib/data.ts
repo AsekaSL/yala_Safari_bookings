@@ -1878,19 +1878,19 @@ export const feature: FeatureContainer[] = [
     {
         title: "Leopard Density",
         icon: "pets",
-        style: "bg-primary/10 text-primary group-hover:bg-primary",
+        style: "bg-[#5a3e2a]/10 text-[#5a3e2a] group-hover:bg-[#5a3e2a]",
         description: "Recognized as having one of the highest leopard densities in the world."
     },
     {
         title: "Gentle Giants",
         icon: "pest_control_rodent",
-        style: "bg-sky-blue/20 text-[#2d5c6f] group-hover:bg-sky-blue",
+        style: "bg-sky-blue/20 text-[#2d5c6f] group-hover:bg-[#7FB3C8]",
         description: "Home to majestic herds of elephants roaming freely in their natural habitat."
     },
     {
         title: "Rich Biodiversity",
         icon: "photo_camera",
-        style: "bg-accent/10 text-accent group-hover:bg-accent",
+        style: "bg-[#FF914D]/10 text-[#FF914D] group-hover:bg-[#FF914D]",
         description: "A birdwatcher's paradise with 215 bird species and diverse reptiles."
     },
     {
